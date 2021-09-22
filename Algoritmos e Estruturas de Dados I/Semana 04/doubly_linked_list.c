@@ -18,20 +18,14 @@ void insertIn (List *l, int value) {
 
 	if (l->start != NULL) {
 		if (abs(value - l->start->value) < abs(value - l->end->value)) {
-			next = l->start;
-			while (next != NULL && next->value < value) {
+			for (next = l->start; next != NULL && next->value < value; next = next->next)
 				prev = next;
-				next = next->next;
-			}
 			if (next != NULL && next->value == value)
 				return;
 		}
 		else {
-			prev = l->end;
-			while (prev != NULL && prev->value > value) {
+			for (prev = l->end; prev != NULL && prev->value > value; prev = prev->prev)
 				next = prev;
-				prev = prev->prev;
-			}
 			if (prev != NULL && prev->value == value)
 				return;
 		}

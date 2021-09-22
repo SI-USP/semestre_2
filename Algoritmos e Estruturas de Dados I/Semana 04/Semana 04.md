@@ -2,8 +2,6 @@
 
 > Por Guilherme de Abreu Barreto, nUSP: 12543033.
 
-
-
 ```c
 #include <stdio.h>
 #include <stdlib.h>

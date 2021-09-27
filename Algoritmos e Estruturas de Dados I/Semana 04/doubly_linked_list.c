@@ -13,23 +13,12 @@ typedef struct {
 } List;
 
 void insertIn (List *l, int value) {
-	Node *prev, *current, *next;
-	prev = next = NULL;
+	Node *prev = NULL, *current, *next;
 
-	if (l->start != NULL) {
-		if (abs(value - l->start->value) < abs(value - l->end->value)) {
-			for (next = l->start; next != NULL && next->value < value; next = next->next)
-				prev = next;
-			if (next != NULL && next->value == value)
-				return;
-		}
-		else {
-			for (prev = l->end; prev != NULL && prev->value > value; prev = prev->prev)
-				next = prev;
-			if (prev != NULL && prev->value == value)
-				return;
-		}
-	}
+	for (next = l->start; next != NULL && next->value < value; next = next->next)
+		prev = next;
+	if (next != NULL && next->value == value)
+		return;
 
 	current = malloc(sizeof(*current));
 	current->value = value;
@@ -48,20 +37,10 @@ void insertIn (List *l, int value) {
 }
 
 void removeFrom (List *l, int value) {
-	Node *current;
+	Node *current = l->start;
 
-	if (l->start == NULL)
-		return;
-	if (abs(value - l->start->value) < abs(value - l->end->value)) {
-		current = l->start;
-		while (current != NULL && current->value < value)
-			current = current->next;
-	}
-	else {
-		current = l->end;
-		while (current != NULL && current->value > value)
-			current = current->prev;
-	}
+	while (current != NULL && current->value < value)
+		current = current->next;
 
 	if (current == NULL)
 		return;

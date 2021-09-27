@@ -8,7 +8,7 @@
 | $f(x) = x^n$                | $f'(x) = nx^{n - 1}$                                       |
 | $f(x) = c x^n$              | $f'(x) = cnx^{n - 1}$                                      |
 | $f(x) = g(x) h(x)$          | $f'(x) = g(x) h'(x) + g'(x) h(x)$                          |
-| $f(x) = \dfrac{g(x)}{h(x)}$ | $f'(x) = \dfrac{h(x)g'(x) + g(x) h'(x)}{\big(h(x)\big)^2}$ |
+| $f(x) = \dfrac{g(x)}{h(x)}$ | $f'(x) = \dfrac{h(x)g'(x) - g(x) h'(x)}{\big(h(x)\big)^2}$ |
 | $f(x) = a^x$                | $f'(x) = a^x\ln a $                                        |
 | $f(x) = log_ax$             | $f'(x) = \dfrac1{x\ln a}$                                  |
 

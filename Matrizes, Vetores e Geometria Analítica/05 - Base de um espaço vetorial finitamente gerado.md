@@ -12,3 +12,9 @@ Por exemplo,
 - $\{(1, 0, \dots, 0), (0,1,0, \dots, 0), \dots, (0, \dots, 0, 1)\}$ é uma base do $\R^n$
 
 Fica convencionado que se $V = \{e\}$, seu subconjunto gerador é o conjunto vazio: $[\empty] = V$.
+
+## Base canônica
+
+A base aquela composta por vetores unitários na forma
+
+${(1, 0, \dots, 0), (0,1,0, \dots, 0), \dots, (0, \dots, 0, 1)}$

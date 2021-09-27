@@ -139,7 +139,7 @@ $
 | V   | V   | V   | $(V \land F) \lor (V \lor V) \equiv V$                                           |
 | V   | V   | F   | $(V \land V) \lor (V \lor F) \equiv V$                                           |
 | V   | F   | V   | $(F \land F) \lor (F \lor V) \equiv V$                                           |
-| V   | F   | F   | $(F \land V) \lor (F \lor V) \equiv F$                                           |
+| V   | F   | F   | $(F \land V) \lor (F \lor V) \equiv V$                                           |
 
 ## 8.
 

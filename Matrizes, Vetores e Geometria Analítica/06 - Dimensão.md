@@ -29,5 +29,3 @@ Todo sub-espaço vetorial de um espaço finitamente gerado também é finitament
 ### Proposição 4
 
 Seja $W$ um sub-espaço vetorial de $V$. Se $\dim W = \dim V$, então $W = V$.
-
-

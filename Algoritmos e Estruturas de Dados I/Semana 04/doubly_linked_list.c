@@ -33,24 +33,18 @@ void insertIn (List *l, int value) {
 
 	current = malloc(sizeof(*current));
 	current->value = value;
+	current->prev = prev;
+	current->next = next;
 
-	if (prev == NULL) {
-		current->next = l->start;
+	if (prev == NULL)
 		l->start = current;
-	}
-	else {
-		current->next = prev->next;
+	else
 		prev->next = current;
-	}
 
-	if (next == NULL) {
-		current->prev = l->end;
+	if (next == NULL)
 		l->end = current;
-	}
-	else {
-		current->prev = next->prev;
+	else
 		next->prev = current;
-	}
 }
 
 void removeFrom (List *l, int value) {
@@ -75,17 +69,15 @@ void removeFrom (List *l, int value) {
 		current->prev->next = current->next;
 		current->next->prev = current->prev;
 	}
+	else if (current->prev == NULL) {
+		l->start = current->next;
+		if (current->next != NULL)
+			current->next->prev = NULL;
+	}
 	else {
-		if (current->prev == NULL) {
-			l->start = current->next;
-			if (current->next != NULL)
-				current->next->prev = NULL;
-		}
-		if (current->next == NULL) {
-			l->end = current->prev;
-			if (current->prev != NULL)
-				current->prev->next = NULL;
-		}
+		l->end = current->prev;
+		if (current->prev != NULL)
+			current->prev->next = NULL;
 	}
 	free(current);
 }

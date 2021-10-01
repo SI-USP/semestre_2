@@ -1,4 +1,4 @@
-# Semana 04: resposta ao [exercício proposto](http://www.each.usp.br/digiampietri/ACH2023/ACH2023_AtividadeSemanal05.pdf)
+# Semana 05: resposta ao [exercício proposto](http://www.each.usp.br/digiampietri/ACH2023/ACH2023_AtividadeSemanal05.pdf)
 
 > Por Guilherme de Abreu Barreto[^1]
 

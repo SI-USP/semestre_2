@@ -3,21 +3,19 @@
 
 typedef struct node {
 	int value;
-	struct node *prev;
-	struct node *next;
+	struct node *prev, *next;
 } Node;
 
 typedef struct {
-	Node *start;
-	Node *end;
+	Node *start, *end;
 } List;
 
 void insertIn (List *l, int value) {
 	Node *prev = NULL, *current, *next;
 
-	for (next = l->start; next != NULL && next->value < value; next = next->next)
+	for (next = l->start; next && next->value < value; next = next->next)
 		prev = next;
-	if (next != NULL && next->value == value)
+	if (next && next->value == value)
 		return;
 
 	current = malloc(sizeof(*current));
@@ -25,12 +23,12 @@ void insertIn (List *l, int value) {
 	current->prev = prev;
 	current->next = next;
 
-	if (prev == NULL)
+	if (prev)
 		l->start = current;
 	else
 		prev->next = current;
 
-	if (next == NULL)
+	if (next)
 		l->end = current;
 	else
 		next->prev = current;
@@ -39,23 +37,23 @@ void insertIn (List *l, int value) {
 void removeFrom (List *l, int value) {
 	Node *current = l->start;
 
-	while (current != NULL && current->value < value)
+	while (current && current->value < value)
 		current = current->next;
-
-	if (current == NULL)
+	if (current)
 		return;
-	if (current->prev != NULL && current->next != NULL) {
+
+	if (current->prev && current->next) {
 		current->prev->next = current->next;
 		current->next->prev = current->prev;
 	}
-	else if (current->prev == NULL) {
+	else if (!current->prev) {
 		l->start = current->next;
-		if (current->next != NULL)
+		if (current->next)
 			current->next->prev = NULL;
 	}
 	else {
 		l->end = current->prev;
-		if (current->prev != NULL)
+		if (current->prev)
 			current->prev->next = NULL;
 	}
 	free(current);
@@ -65,7 +63,7 @@ void printList (List l) {
 	int i;
 	Node *current = l.start;
 
-	for (i = 0; current != NULL; i++) {
+	for (i = 0; current; i++) {
 	    printf("\nÍndice: %-6d Valor: %-6d (Endereços) Anterior: %p Atual: %p Próximo: %p\n", i, current->value, current->prev, current, current->next);
 		current = current->next;
 	}

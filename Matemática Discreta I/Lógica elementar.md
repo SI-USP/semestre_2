@@ -6,7 +6,7 @@ Respostas à [1ª lista de exercícios](https://classroom.google.com/u/0/c/MzgyM
 
 **(a)** $(q \land \lnot r) \to p$
 
-"*Se o céu está estrelado e não está fazendo frio então Eva vai sair para uma caminhada*"
+"*O céu está estrelado e não está fazendo frio, então Eva vai sair para uma caminhada*"
 
 **(b)**  $q \to (\lnot r \to p)$
 
@@ -19,7 +19,10 @@ A proposição acima equivale à $q \to (r \lor p)$, conforme demonstra a seguin
 | V   | F   | V               | V           |
 | V   | V   | V               | V           |
 
-Logo, a oração fica: "*Se o céu está estrelado então está fazendo frio ou Eva vai sair para uma caminhada.*"
+Logo, a oração fica: "*O céu está estrelado, então está fazendo frio ou Eva vai sair para uma caminhada.*"
+
+> Resultado diferente do sugerido pelo professor “O céu está estrelado então Eva vai sair para uma caminhada porque não está fazendo
+> frio.” Este afirma não estar fazendo frio
 
 **(c)** $\lnot(p \iff (q \lor r))$
 
@@ -63,10 +66,10 @@ Se q é uma tautologia, $q \equiv V$ sempre. Enquanto, se r é uma contradição
 | F   | V   | F   | F                    | F                              |
 | F   | F   | V   | F                    | F                              |
 | F   | V   | V   | F                    | F                              |
-| V   | V   | V   | V                    | V                              |
+| V   | F   | F   | F                    | F                              |
 | V   | V   | F   | V                    | V                              |
 | V   | F   | V   | V                    | V                              |
-| V   | F   | F   | F                    | F                              |
+| V   | V   | V   | V                    | V                              |
 
 **(b)** Tal qual anterioremente,
 

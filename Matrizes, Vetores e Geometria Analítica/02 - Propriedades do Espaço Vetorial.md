@@ -72,9 +72,7 @@ $$
 \exist\ e \in V \mid u + e = u
 $$
 
-Assim, $e = e + u = u + g = g \implies e = g
-
-$.
+Assim, $e = e + u = u + g = g \implies e = g$.
 
 ## P8
 
@@ -83,7 +81,7 @@ Para cada vetor $u$ de um espaço vetorial $V$ existe um único vetor $(-u)$  op
 **Prova:** Digamos que existe $g$ tal que $u + g = e$. Daí então,
 
 $$
--u = -u + e = -u (u + g) = (-u + u) + g = e + g = g
+-u = -u + e = -u + (u + g) = (-u + u) + g = e + g = g
 $$
 
 ## P9
@@ -111,5 +109,3 @@ Existe um único vetor $v$ tal que $u + v = w$.
 **Prova:**
 
 $(-u) + u + v = (-u) + w \implies e + v = w + (-u) \implies v = w + (-u)$
-
-

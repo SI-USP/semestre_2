@@ -56,7 +56,7 @@ $\int_{-3}^0 (1 + \sqrt{9 - x^2})\ dx = 3 + \dfrac{9\pi}4$
 
 ### Exercício 53
 
-Cada uma das regiões $A$, $B$ e $C$ delimitadas pelo gráfico de $f$ e o eixo $x$ tem área $3$. Encontre o valor de
+Cada uma das regiõves $A$, $B$ e $C$ delimitadas pelo gráfico de $f$ e o eixo $x$ tem área $3$. Encontre o valor de
 
 $$
 \int_{-4}^2 [f(x) + 2x +5]\ dx

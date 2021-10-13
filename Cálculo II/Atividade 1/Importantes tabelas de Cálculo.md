@@ -49,8 +49,9 @@ $$
 | $\sin x$                   | $- \cos x + C$                 |
 | $\sec^2x$                  | $\tan x + C$                   |
 | $\csc^2 x$                 | $- \cot x + C$                 |
+| $\sinh x$                  | $\cosh x + C$                  |
 | $\cosh x$                  | $\sinh x + C$                  |
 | $\csc x \cot x$            | $- \csc x + C$                 |
 | $\sec x \tan x$            | $\sec x + C$                   |
-| $\dfrac 1{\sqrt{1 - x^2}}$ | $\sin^{-1} + C$                |
-| $\dfrac 1{1 + x^2}$        | $\tan^{-1} + C$                |
+| $\dfrac 1{\sqrt{1 - x^2}}$ | $\sin^{-1} + C = \arcsin + C$  |
+| $\dfrac 1{1 + x^2}$        | $\tan^{-1} + C = \arctan + C$  |

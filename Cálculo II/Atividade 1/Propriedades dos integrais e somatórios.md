@@ -41,6 +41,26 @@ $$
 
 7. $\displaystyle \sum^n_{i = 1} a^i = \dfrac{a(a^n - 1)}{a - 1}$[^2]
 
+## Regra do ponto médio
+
+Quando a Somatória de Reimann é expressa enquanto
+
+$$
+\displaystyle \sum^n_{i = 1} f(\overline x_i) \Delta x
+$$
+
+Onde $\overline x_i = \frac 12 (x_{i - 1} + x_i)$.
+
+## Propriedades comparativas da Integral
+
+Considerando $a \le x \le b$:
+
+- Se $f(x) \ge 0$, então $\int^b_a f(x)\ dx \ge 0$.
+
+- Se $f(x) \ge g(x)$, então $\int^b_a f(x)\ dx \ge \int^b_a g(x)\ dx$.
+
+- Se $m \le f(x) \le M$, então $m (b - a) \le \int^b_a f(x)\ dx \le M (b - a)$
+
 [^1]: Fórmula da somatória de uma progressão aritmética
 
 [^2]: Fórmula da somatória de uma progressão geométrica

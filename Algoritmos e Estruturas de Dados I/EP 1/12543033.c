@@ -125,7 +125,7 @@ bool inserirNovoProduto(PLISTA l, int id, int tipo, int quantidade, int valor){
     if (id < 0 || tipo < 0 || quantidade < 0 || valor < 0 || buscarID(l, id))
         return false;
 
-    novo = malloc(sizeof(*novo));
+    novo = malloc(sizeof(REGISTRO));
     novo->id = id;
     novo->quantidade = quantidade;
     novo->valorUnitario = valor;

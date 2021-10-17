@@ -156,11 +156,11 @@ $x + y + z = 0 \implies z = -(x + y)$. Então, se $u = (a, b, -(a + b))$ e $v = 
 
 **Multiplicação:** *αu = (αa, αb, - (αa + αb))*.
 
-- [x] $W = \{(x, y, z) \in V : x \ge y \ge z\}$
+- [ ] $W = \{(x, y, z) \in V : x \ge y \ge z\}$
 
 **Adição:** u + v = *(x~1~, y~1~, z~1~) + (x~2~, y~2~, z~2~) = (x~1~ + x~2~, y~1~ + y~2~, z~1~ + z~2~), onde x~1~ + x~2~ ≥ y~1~ + y~2~ ≥ z~1~ + z~2~*;
 
-**Multiplicação:** *αu = (αx~1~, αy~1~, αz~1~)* onde *αx~1~ ≥ αy~1~ ≥ αz~1~*
+**Multiplicação:** *αx~1~ ≥ αy~1~ ≥ αz~1~* para α ≥ 0, mas *αx~1~ ≤ αy~1~ ≤ αz~1~* para α < 0.
 
 - [x] $W = \{(x, y, z) \in V : x − 3z = 0\}$
 

@@ -1,40 +1,83 @@
+#include <stdlib.h>
+
 void swap (int *a, int *b) {
 	int tmp = *a;
 	*a = *b;
 	*b = tmp;
 }
 
-void bubbleSort (int *v, int n) {
+int *merge (int *array1, int size1, int *array2, int size2) {
+	int k, i, j, *array3 = malloc((size1 + size2) * sizeof(*array3));
+
+	for (k = i = j = 0; k < size1 + size2; k++)
+		array3[k] = ((i < size1 && array1[i] <= array2[j]) || j >= size2) ? array1[i++] : array2[j++];
+	return array3;
+}
+
+int partition (int *array, int size) {
+	int i = -1, j;
+
+	for (j = 0; j < size - 1; j++)
+	    if (array[j] <= array[size - 1])
+			swap(&array[++i], &array[j]);
+	swap(&array[++i], &array[j]);
+
+	return i;
+}
+
+void bubbleSort (int *array, int size) {
 	int i;
 
-	if (n <= 1)
+	if (size <= 1)
 		return;
-	for (i = 0; i < n; i++)
-		if (v[i] > v[i + 1])
-			swap(&v[i], &v[i + 1]);
-	bubbleSort(v, n - 1);
+	for (i = 0; i < size; i++)
+		if (array[i] > array[i + 1])
+			swap(&array[i], &array[i + 1]);
+	bubbleSort(array, size - 1);
 }
 
-void selectionSort (int *v, int n) {
+void selectionSort (int *array, int size) {
     int i, pos = 0;
 
-    if (n <= 1)
+    if (size <= 1)
         return;
-    for (i = 1; i < n; i++)
-        if (v[i] < v[pos])
+    for (i = 1; i < size; i++)
+        if (array[i] < array[pos])
             pos = i;
-    swap(v, &v[pos]);
-    selectionSort(v + 1, n - 1);
+    swap(array, &array[pos]);
+    selectionSort(array + 1, size - 1);
 }
 
-void insertionSort (int *v, int n) {
+void insertionSort (int *array, int size) {
     int i, tmp;
 
-    if (n <= 1)
+    if (size <= 1)
         return;
-    insertionSort(v, n - 1);
-    tmp = v[n - 1];
-    for (i = n - 2; i >= 0 && v[i] > tmp; i--)
-        v[i + 1] = v[i];
-    v[i + 1] = tmp;
+    insertionSort(array, size - 1);
+    tmp = array[size - 1];
+    for (i = size - 2; i >= 0 && array[i] > tmp; i--)
+        array[i + 1] = array[i];
+    array[i + 1] = tmp;
+}
+
+void mergeSort(int *array, int size) {
+	int *tmp, i, m = size / 2;
+
+	if (size > 1) {
+		mergeSort(array, m);
+		mergeSort(array + m, size - m);
+	}
+	tmp = merge(array, m, array + m, size - m);
+	for (i = 0; i < size; i++)
+	    array[i] = tmp[i];
+}
+
+void quickSort (int *array, int size) {
+	int pivot;
+
+	if (size <= 1)
+		return;
+	pivot = partition(array, size);
+	quickSort(array, pivot);
+	quickSort(array + (pivot + 1), size - (pivot + 1));
 }

@@ -61,15 +61,15 @@ Considere $\{u_1, u_2, u_3\}$ uma base de um espaço vetorial $V$ . Prove que o 
 
 ### Resolução
 
-Uma base vetorial $B$ é um subconjunto tal que os vetores nele contidos
+Uma base vetorial $B$ é um subconjunto tal que os vetores nele contidos **não são**
 
-- **não são** múltiplos uns dos outros;
+- múltiplos entre si;
 
-- **são todos** não nulos.
+- nulos.
 
 tal que $[B] = e$ se, e somente se, $[B] = 0u_1 + 0u_2 + 0u_3$. Assim sendo, para quaisquer $u_i$, $u_j$, e $u_w$ diferentes de zero onde $u_i \nmid u_j$ e $u_w \nmid u_j$ segue que $u_i + u_w \nmid u_j$ e mesmo $u_i + u_j \nmid u_j$. Assim, cerificamos que se $\{u_1, u_2, u_3\}$ é um subespaço vetorial L.I., $\{v_1 , v_2 , v_3\}$ também o é.
 
-Mas seria esse segundo subconjunto também uma base? Conforme o Teorema da invariância:
+Mas seria esse segundo subconjunto também uma base? Conforme o **Teorema da invariância**:
 
 > Seja $V$ um espaço vetorial finitamente gerado. Então duas bases quaisquer de $V$ têm **o mesmo número de vetores**.
 
@@ -86,6 +86,34 @@ $$
 
 só pode ser verdadeira quando todos os $c_i$'s = 0.
 
+### Resolução
+
+Por tratar-se de uma base, tem-se que:
+
+$0(v_1 + \dots + v_k + v_{k + 1} + \dots + v_n ) = e \implies \\ 0(v_1 + \dots + v_k) = -0(v_{k + 1} + \dots + v_n) \implies \\ 0(v_1 + \dots + v_k) = 0(v_{k + 1} + \dots + v_n)$
+
+Substituindo 0 por $c$, temos que a relação se mantém verdadeira. Aliás, isso só é possível se $c = 0$ por este é o único número de mesmo valor sendo positivo ou negativo. $\blacksquare$
+
 ## Exercício 7
 
 Mostre que, considerando uma base $B = \{v_1 , \dots , v_n\}$ de um espaço $V$, cada combinação linear é única, isto é, cada vetor $u \in V$ pode ser escrito de maneira única como combinação linear dos vetores de $B$.
+
+### Resolução
+
+Vamos admitir que uma dada combinação linear $u$ admite duas representações distintas:
+
+$$
+u = \{a_1v_1, \dots, a_nv_n\} = \{b_1v_1, \dots, b_nv_n\}
+$$
+
+Disso implica que:
+
+$$
+a_iv_i = b_iv_i \implies \underbrace{\cancel{a_iv_i + (-a_i)v_i}}_{e} = b_iv_i + (-a_i)v_i \implies (b_i - a_i)v_i = e
+$$
+
+Por tratar-se de uma base, tem-se que $\prod^n_{i = 1} v_i \not = 0$. Logo:
+
+$$
+(b_i - a_i)v_i = e \implies (b_i - a_i)v_i = 0v_i \implies b_i - a_i = 0 \implies b_i = a_i\ \blacksquare
+$$

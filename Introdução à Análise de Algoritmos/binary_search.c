@@ -4,7 +4,7 @@
 /* Remember that C has its own implementation of the binary search as "bsearch" */
 
 bool binarySearch (int * array, int size, int key) {
-    int i = (size - 1) / 2;
+    int i = size / 2;
 
     if (array[i] == key)
         return true;

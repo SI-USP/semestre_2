@@ -28,7 +28,7 @@ Conceitualmente, seu funcionamento se dá da seguinte maneira:
 
 3. resta apenas a lista original ordenada. A partir de então, para encontrar o $i$-ésimo menor elemento, basta referenciar o arranjo pelo índice $i$: `A[i]`.
 
-<img src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Introdução%20à%20Análise%20de%20Algoritmos/Imagens/6c52e98c5f8c72034157c90f136b1ee0d1f2ce41.png" title="" alt="" data-align="center">
+<img title="" src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Introdução%20à%20Análise%20de%20Algoritmos/Imagens/6c52e98c5f8c72034157c90f136b1ee0d1f2ce41.png" alt="" data-align="center" width="264">
 
 > Diagrama ilustrando os passos para execução do *Merge Sort* em uma sequência de 7 números inteiros.[^2]
 
@@ -37,40 +37,43 @@ Conceitualmente, seu funcionamento se dá da seguinte maneira:
 Minha implementação deste algoritmo para o presente problema é dado pelas seguintes funções:
 
 ```c
-   1   │ #define array int*
-   2   │ 
-   3   │ void merge (array A, int pivot, int size) {
-   4   │     int i, k, j = pivot, tmp[size];
-   5   │ 
-   6   │     for (i = k = 0; k < size; k++)
-   7   │         tmp[k] = ((A[i] <= A[j] && i < pivot) || j == size) ?
-   8   |         A[i++] : A[j++];
-   9   │     for (k = 0; k < size; k++)
-  10   │         A[k] = tmp[k];
-  11   │ }
-  12   │
+   1   │ #include <stdlib.h>
+   2   │ #define array int*
+   3   │
+   4   │ void merge (array A, int pivot, int size) {
+   5   │     int i, k, j = pivot, tmp[size];
+   6   |     array tmp = malloc(size * sizeof(int));
+   7   │ 
+   8   │     for (i = k = 0; k < size; k++)
+   9   │         tmp[k] = ((A[i] <= A[j] && i < pivot) || j == size) ?
+  10   |         A[i++] : A[j++];
+  11   │     for (k = 0; k < size; k++)
+  12   │         A[k] = tmp[k];
+  13   |     free(tmp);
+  14   │ }
+  15   |
 ```
 
 ```c
-  13   │ void mergeSort (array A, int size) {
-  14   │     int pivot;
-  15   │ 
-  16   │     if (size <= 1)
-  17   │         return;
-  18   │     pivot = size / 2;
-  19   │     mergeSort(A, pivot);
-  20   │     mergeSort(A + pivot, size - pivot);
-  21   │     merge(A, pivot, size);
-  22   │ }
+  16   │ void mergeSort (array A, int size) {
+  17   │     int pivot;
+  18   │ 
+  19   │     if (size <= 1)
+  20   │         return;
+  21   │     pivot = size / 2;
+  22   │     mergeSort(A, pivot);
+  23   │     mergeSort(A + pivot, size - pivot);
+  24   │     merge(A, pivot, size);
+  25   │ }
 ```
 
 #### Correção
 
 Podemos aferir que o algoritmo acima é correto (isto é, adequado a produzir a solução) pois
 
-1. Nas linhas 19 e 20 subdivide-se a sequência em pares recursivamente, procedimento este que se repetirá até que restem apenas subconjuntos de 1 elemento e a função retorne na linha 17.
+1. Nas linhas 22 e 23 subdivide-se a sequência em pares recursivamente, procedimento este que se repetirá até que restem apenas subconjuntos de 1 elemento e a função retorne na linha 20.
 
-2. Cada recursão anterior então acessa a função `merge` na linha 21. Esta integrará pares de conjuntos adjacentes ao índice `pivot` nas linhas 7 e 8, percorrendo-os cada qual desde seus respectivos índices iniciais `i` e `j` e posicionando o elemento de menor valor no índice $k$. Isso, seguro de que estes já estarão ordenados em ordem crescente dada a condição anterior. Este então retornará os elementos de ambos os conjuntos em ordem crescente na linha 10.
+2. Cada recursão anterior então acessa a função `merge` na linha 24. Esta integra pares de conjuntos adjacentes ao índice `pivot` nas linhas 8 à 10, percorrendo-os cada qual desde seus respectivos índices iniciais `i` e `j` e posicionando o elemento de menor valor no índice `k`. Isso, seguro de que estes já estarão ordenados em ordem crescente dada a condição anterior. Este então retornará os elementos de ambos os conjuntos em ordem crescente na linha 11 e 12.
 
 3. O procedimento anterior se repete $(n - 1)$ vezes até que todos os pares ordenados combinados produzem a sequência original ordenada.
 
@@ -82,7 +85,7 @@ A correção do algoritmo foi testada manualmente para pequenos arranjos utiliza
 
 #### Tempo de Execução
 
-É possível afirmar que o tempo de execução $T(n)$ do *Merge Sort* para quaisquer entradas de mesmo tamanho $n$ é assintoticamente equivalente pois independentemente dos valores contidos na entrada, as mesmas operações de comparação (na linha 7) e atribuição (na linha 10) são executadas. Isto é, diferentemente do que é visto noutros algoritmos de ordenação tais quais o *Quick Sort* ou o *Insertion Sort*. Para estimar este tempo de execução, podemos recorrer ao *Teorema Mestre para recorrências de Divisão e Conquista*, por este ser um algoritmo do tipo *Divisão e Conquista*. Segundo Márcio Ribeiro (2021) o teorema mestre pode ser descrito nos seguintes termos:
+É possível afirmar que o tempo de execução $T(n)$ do *Merge Sort* para quaisquer entradas de mesmo tamanho $n$ é assintoticamente equivalente pois independentemente dos valores contidos na entrada, o mesmo número de operações de comparação (na linha 9) e atribuição (na linha 12) são executadas. Isto é, diferentemente do que é visto noutros algoritmos de ordenação tais quais o *Quick Sort* ou o *Insertion Sort*. Para estimar este tempo de execução, podemos recorrer ao *Teorema Mestre para recorrências de Divisão e Conquista*, por este ser um algoritmo do tipo *Divisão e Conquista*. Segundo Márcio Ribeiro (2021) o teorema mestre pode ser descrito nos seguintes termos:
 
 > Sejam $a \ge 1$, $b > 1$ e $T (n) = aT \left( \frac nb \right) + f (n)$, então:
 > 
@@ -92,7 +95,7 @@ A correção do algoritmo foi testada manualmente para pequenos arranjos utiliza
 > 
 > 3. se $f(n) \in \Omega \left(n^{\log_b (a + \varepsilon)} \right)$  para algum $\varepsilon > 0$ e se $af \left(\frac nb \right) \le cf(n)$ para algum $c < 1$ e todo $n$ suficientemente grande então $T(n) \in Θ(f (n))$
 
-Temos que o tempo de execução $T(n)$ em função do tamanho $n$ da entrada do algoritmo *Merge Sort* é constante das linhas 14 à 18 mas varia nas linhas 19 e 20 ($T\left(\frac n2 \right)$ cada), e 21 ($cn$, para uma constante $c > 0$). Assim temos que a forma geral do tempo de execução é:
+Temos que o tempo de execução $T(n)$ em função do tamanho $n$ da entrada do algoritmo *Merge Sort* é constante das linhas 17 à 21 mas varia nas linhas 22 e 23 ($T\left(\frac n2 \right)$ cada), e 24 ($cn$, para uma constante $c > 0$). Assim temos que a forma geral do tempo de execução é:
 
 $$
 T(n) = 2T\left(\frac n2 \right) + cn
@@ -122,13 +125,7 @@ O algoritmo `quickSelect`, tal qual o algoritmo *Quick Sort*, foi desenvolvido p
 
 Conceitualmente, seu funcionamento se dá da seguinte maneira:
 
-- Particiona-se a sequência à partir do valor de um elemento qualquer contido nessa, separando-a em dois subconjuntos contendo respectivamente
-  
-  - valores maiores ou iguais;
-  
-  - e menores que o pivô.
-  
-  Portanto, o pivô passa a ocupar uma posição intermediária às partições;
+- Particiona-se a sequência à partir do valor de um elemento qualquer contido nessa denominado o pivô, separando-a em dois subconjuntos contendo respectivamente valores maiores e menores que este. Assim, o pivô passa a ocupar uma posição intermediária às partições e é considerado ordenado;
 
 - Se o pivô assume a posição do índice buscado ou resta apenas um único índice no conjunto particionado, a busca se encerra; senão repete-se o procedimento na partição aquela que contiver o índice $i$ (sendo este menor ou maior que o pivô).
 
@@ -175,9 +172,9 @@ Podemos aferir que o algoritmo acima é correto pois
 
 1. Se a a entrada contiver um único elemento, este é o elemento devolvido — Este é o caso base.
 
-2. Senão, o conjunto é particionado na linha 24 e comparações são feitas nas linhas 25 para aferir se o índice foi encontrado no pivô ou, senão, na linha 27 determina-se em qual partição o procedimento de busca deve ser repetido até que as condições anteriores sejam satisfeitas.
+2. Senão, o conjunto é particionado na linha 25 e comparações são feitas na linha 26 para aferir se o índice foi encontrado no pivô ou, senão, na linha 27  para determinar em qual partição o procedimento de busca deve ser repetido até que as condições anteriores sejam satisfeitas.
 
-3. Como toda partição é menor que o conjunto que lhe deu origem, no pior caso eventualmente a partição avaliada será pequena o suficiente para corresponder ao caso base.
+3. Como toda partição é menor que o conjunto que lhe deu origem, no pior caso a partição avaliada eventualmente será pequena o suficiente para corresponder ao caso base.
 
 ##### Teste empírico
 
@@ -195,9 +192,13 @@ O melhor caso para a execução deste algoritmo é aquele em que o $i$-ésimo me
 
 O pior caso para a execução deste algoritmo seria aquele onde o usuário busca o  menor valor de um arranjo que encontra-se perfeitamente em ordem crescente **à partir do segundo elemento**. Assim, o primeiro elemento tem o maior valor e cada processo de partição se dá de forma em que o pivô é o $(n - (i - 1))$ maior elemento, produzindo assim partições de tamanho menor que a anterior em apenas uma unidade. Assim o arranjo é percorrido de maneira a realizar um número de $S_n$ de comparações na linha 14 equivalente à:
 
-$$
-S_n = n + (n - 1) + (n - 2) + \dots + 1 = \frac{n(n + 1)}2 = \frac{n^2 + n}2
-$$
+$
+S_n = \displaystyle \sum^{n - 1}_{i = 1}(n - i)
+= \sum^{n - 1}_{i = 1} n - \sum^{n - 1}_{i = 1} i
+= n(n - 1) - \frac{(n - 1)[(n - 1) + 1]}2 \\
+= (n - 1)\left(n - \frac n2\right) = \frac{n (n - 1)}2
+= \dfrac{n^2 - n}2
+$
 
 Ou seja, o tempo de execução do algoritmo restaria em ordem quadrática: $T(n) \in \Theta(n^2)$.
 
@@ -205,7 +206,7 @@ Ou seja, o tempo de execução do algoritmo restaria em ordem quadrática: $T(n)
 
 Aplicando-se o Teorema Mestre conseguimos avaliar o **caso médio**, pois este admite que recursões são feitas em conjuntos menores de igual tamanho entre si. Fosse sempre este o caso com este algoritmo o índice $i$ ser menor ou maior que aquele do pivô não afetaria o tempo de execução da recursão seguinte, o qual também não seria nem muito pequeno (com o tamanho da partição seguinte abaixo da média) ou muito grande (com o tamanho da partição seguinte acima da média).
 
-Temos que o tempo de execução $T(n)$ em função do tamanho $n$ da entrada do algoritmo *quickSelect* é constante nas linhas 20 à 23, 25 à 26 e 27 mas varia na linha 24 ($cn$, para uma constante $c > 0$) e nas linhas 28 e 29 ($T\left(\frac n2 \right)$ cada), das quais apenas uma delas é executada condicionalmente. Assim temos que a forma geral do tempo de execução é:
+Temos que o tempo de execução $T(n)$ em função do tamanho $n$ da entrada do algoritmo *quickSelect* é constante senão nas linhas 25 ($cn$, para uma constante $c > 0$), 29 e 31 ($T\left(\frac n2 \right)$ cada), das quais apenas uma delas é executada condicionalmente. Assim temos que a forma geral do tempo de execução é:
 
 $$
 T(n) = T\left(\frac n2 \right) + cn
@@ -219,7 +220,11 @@ Ou seja, conforme a definição $aT \left( \frac nb \right) + f (n)$ tem-se que
 
 - $f(n) = cn$, sendo $\Theta(cn) \equiv \Theta(n)$;
 
-- e portanto $f(n) \in \Omega \left( n^{\log_b(a+ \varepsilon)} \right)$ pois $\Omega \left(n^{\log_2(1 + 1)} \right) = \Omega(n)$.
+- e portanto
+  
+  - $f(n) \in \Omega \left( n^{\log_b(a+ \varepsilon)} \right)$ pois $\Omega \left(n^{\log_2(1 + 1)} \right) = \Omega(n)$;
+  
+  - $f\left(\frac n2 \right) < f(n) \implies af\left(\frac nb \right) \le \varepsilon f(n)$ para algum $\varepsilon < 1$;
 
 Assim, temos pela aplicação do teorema que:
 
@@ -228,6 +233,8 @@ T(n) \in \Theta(cn) \implies T(n) \in \Theta(n)
 $$
 
 Vemos então que teoricamente o caso médio aproxima-se mais da situação observada no melhor caso que do pior caso e, para valores de $n$ suficientemente grandes, oferece melhor desempenho com relação a solução `mergeSelect`.
+
+<div style="page-break-before: always;"></div>
 
 ## Objetivo
 
@@ -252,17 +259,11 @@ Graphics:
   Device-2: AMD Topaz XT [Radeon R7 M260/M265 / M340/M360 / M440/M445
   / 530/535 / 620/625 Mobile]
   driver: amdgpu v: kernel
-  Device-3: Sunplus Innovation Integrated_Webcam_HD type: USB
   driver: uvcvideo
   Display: x11 server: X.Org 1.20.13 driver:
   loaded: amdgpu,ati,modesetting resolution: 1920x1080~60Hz
   OpenGL: renderer: Mesa Intel HD Graphics 5500 (BDW GT2)
   v: 4.6 Mesa 21.2.3
-Network:
-  Device-1: Realtek RTL810xE PCI Express Fast Ethernet driver: r8169
-  Device-2: Intel Wireless 7265 driver: iwlwifi
-  Device-3: Intel Bluetooth wireless interface type: USB
-  driver: btusb
 Drives:
   Local Storage: total: 931.51 GiB used: 916.26 GiB (98.4%)
 Info:
@@ -270,29 +271,40 @@ Info:
   used: 3.66 GiB (23.6%) Shell: fish inxi: 3.3.08
 ```
 
-Os valores a serem avaliados[^6] serão sorteados fazendo uso do programa `gerador`[^7] e o índice a ser buscado será sorteado fazendo uso uso do comando `random`, função do shell `fish` na versão `3.3.1`. Este é um exemplo do cabeçalho de um arquivo de texto gerado desta forma:
+> *Output* do comando `inxi -b`, algumas informações foram omitidas.
+
+### Método
+
+Os valores a serem avaliados foram sorteados fazendo uso do programa `gerador`[^6] e depositados em um arquivo. Então, utilizando o comando `random`, uma função do shell `fish` em sua versão 3.3.1, sorteou-se um índice a ser buscado, inserindo-o ao final do arquivo. Finalmente, tais aquivos foram providos enquanto argumentos para os programas de teste[^7] [^8], e o desempenho destes foi aferido fazendo uso do comando `time`, também função do shell `fish`. À seguir vemos os comandos passados e um exemplo de saída:
 
 ```shell
-> head -4 tests/1.txt
-10000 4430
-1747153665
-1888832918
-1550537203
->
-```
+> for n in 1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384
+      wrn "Teste para |n = "(math "$n * 10000")"|"                                                   
+      ./gerador.out $n > $n.txt                                                                      
+      random 0 (math "$n * 10000") >> $n.txt                                                         
+      reg "|Merge Select|"                                                                           
+      time mergeSelect/automatic_test.out < $n.txt                                                   
+      reg "|Quick Select|"                                                                           
+      time quickSelect/automatic_test.out < $n.txt                                                   
+      rm $n.txt                                                                                      
+  end
 
-O primeiro valor (`10000`) descreve o tamanho da entrada, o segundo (`4430`) o índice buscado, os valores restantes são uma amostra daqueles a serem avaliados. tais aquivos serão providos enquanto argumentos para os programas de teste[^8][^9], e o desempenho destes será avaliado fazendo uso do comando `time`, também função do shell `fish`, da seguinte maneira:
+! Teste para n = 10000                                                                               
+Merge Select                                                                                         
+O 331º elemento de menor valor: 70930890                                                             
 
-```shell
-> time mergeSelect/automatic_test.out < tests/1.txt
-O 4430º elemento de menor valor: 934763211
+________________________________________________________                                             
+Executed in    4,39 millis    fish           external                                                
+   usr time    2,16 millis  264,00 micros    1,89 millis                                             
+   sys time    1,98 millis   80,00 micros    1,90 millis                                             
 
-________________________________________________________
-Executed in    4,55 millis    fish           external
-   usr time    4,50 millis  257,00 micros    4,25 millis
-   sys time    0,07 millis   67,00 micros    0,00 millis
+Quick Select                                                                                         
+O 331º elemento de menor valor: 70930890                                                             
 
->    
+________________________________________________________                                             
+Executed in    2,51 millis    fish           external                                                
+   usr time    2,48 millis  300,00 micros    2,18 millis                                             
+   sys time    0,09 millis   90,00 micros    0,00 millis    
 ```
 
 O tempo descrito em `Executed in` será aquele que iremos avaliar.
@@ -301,21 +313,27 @@ O tempo descrito em `Executed in` será aquele que iremos avaliar.
 
 Os seguintes gráfico e tabela relatam o resultado da experimentação:
 
-<img src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Introdução%20à%20Análise%20de%20Algoritmos/Imagens/300fd445a5070f83f99044b2f214c6bfea6dab67.png" title="" alt="" data-align="center">
+<img title="" src="file:///home/user/Public/USP/Sistemas de Informação/2º semestre/Introdução à Análise de Algoritmos/EP 1/Imagens/53ccaa02d734f310cfe4fca904e3cfd3d1a5a053.jpg" alt="" width="681" data-align="center">
 
 | Tamanho da entrada | Tempo de execução — *mergeSelect* | Tempo de execução — *quickSelect* |
-| ------------------ | --------------------------------- | --------------------------------- |
-| 1                  | 4.55                              | 4.43                              |
-| 10                 | 34.05                             | 18.6                              |
-| 20                 | 67.28                             | 26.98                             |
-| 30                 | 102.95                            | 45.49                             |
-| 40                 | 136.44                            | 57.31                             |
-| 50                 | 170.6                             | 73.77                             |
-| 60                 | 203.99                            | 84.78                             |
-| 70                 | 239.94                            | 93.67                             |
-| 80                 | 281.89                            | 103.51                            |
-| 90                 | 316.28                            | 125.8                             |
-| 100                | 343.58                            | 126.54                            |
+| ------------------ | ---------------------------------:| ---------------------------------:|
+| 1                  | 4,39                              | 2,51                              |
+| 2                  | 8,35                              | 4,24                              |
+| 4                  | 14,27                             | 6,47                              |
+| 8                  | 28,30                             | 14,20                             |
+| 16                 | 57,38                             | 23,56                             |
+| 32                 | 111,11                            | 42,34                             |
+| 64                 | 225,69                            | 81,37                             |
+| 128                | 465,20                            | 181,65                            |
+| 256                | 1,18 ⨉ 10³                        | 428,07                            |
+| 512                | 1,93 ⨉ 10³                        | 658,30                            |
+| 1024               | 4,43 ⨉ 10³                        | 1,33 ⨉ 10³                        |
+| 2048               | 8,75 ⨉ 10³                        | 3,06 ⨉ 10³                        |
+| 4096               | 22,62 ⨉ 10³                       | 6,73 ⨉ 10³                        |
+| 8192               | 49,62 ⨉ 10³                       | 13,74 ⨉ 10³                       |
+| 16384              | 90,54 ⨉ 10³                       | 27,65 ⨉ 10³                       |
+| 32768              | 187,31 ⨉ 10³                      | 51,45 ⨉ 10³                       |
+| 65736              | 390,29 ⨉ 10³                      | 106,61 ⨉ 10³                      |
 
 > Tamanho da entrada dado em dezena de milhares (10^4^) e tempo de execução em milissegundos (ms).
 
@@ -335,10 +353,8 @@ Por fim, fica demonstrada a importância e utilidade de métodos de análise de 
 
 [^5]: BARRETO, G. **quickSelect/manual_test.c**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/EP%201/quickSelect/manual_test.c. Acesso em 13 out. 2021
 
-[^6]: BARRETO, G. **tests**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/EP%201/tests. Acesso em: 13 nov. 2021
+[^6]: RIBEIRO, M. **gerador.c**. Disponível em: https://github.com/marciomr/IAA/blob/main/gerador.c. Acesso em: 12 nov. 2021
 
-[^7]: RIBEIRO, M. **gerador.c**. Disponível em: https://github.com/marciomr/IAA/blob/main/gerador.c. Acesso em: 12 nov. 2021
+[^7]: BARRETO, G. **mergeSelect/automatic_test.c**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/EP%201/mergeSelect/automatic_test.c. Acesso em 13 nov. 2021
 
-[^8]: BARRETO, G. **mergeSelect/automatic_test.c**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/EP%201/mergeSelect/automatic_test.c. Acesso em 13 nov. 2021
-
-[^9]: BARRETO, G. **quickSelect/automatic_test.c**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/EP%201/quickSelect/automatic_test.c. Acesso em 13 nov. 2021
+[^8]: BARRETO, G. **quickSelect/automatic_test.c**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/EP%201/quickSelect/automatic_test.c. Acesso em 13 nov. 2021

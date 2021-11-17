@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 #define array int*
 #include "./quick_select.c"
 

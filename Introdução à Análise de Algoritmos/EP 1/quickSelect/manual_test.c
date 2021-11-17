@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
 #include "./quick_select.h"
-#define array int*
 
 int main () {
     unsigned int i = 0, size = 1;

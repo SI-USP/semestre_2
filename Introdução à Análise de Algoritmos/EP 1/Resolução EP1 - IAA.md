@@ -8,7 +8,7 @@
 
 ## Introdução
 
-O *Problema da Seleção*  no contexto desta análise refere-se a necessidade de, para uma sequência de elementos $x_a, \dots, x_i, \dots, x_b$ onde $a \le i \le b$, sendo $a$ e $b$ sendo os índices inicial e final respectivamente, acessar o $i$-esimo elemento $x_i$ de acordo com um dado parâmetro. Iremos aqui admitir que $\forall x \in \Z$ e utilizaremos como critério o valor de $x$ de maneira a selecionar o $i$-esimo elemento de menor valor. Vamos abordar este problema de duas formas:
+O *Problema da Seleção* no contexto desta análise refere-se a necessidade de, para uma sequência de elementos $x_a, \dots, x_i, \dots, x_b$ onde $a \le i \le b$, sendo $a$ e $b$ sendo os índices inicial e final respectivamente, acessar o $i$-esimo elemento $x_i$ de acordo com um dado parâmetro. Trata-se de um problema comumente observado nas situações aquelas em que se busca obter medidas de posição tais quais a mediana ou os quartis, para citar uma aplicação no âmbito da estatística. Para demonstrar a resolução deste, iremos aqui admitir que $\forall x \in \Z$ e utilizaremos como critério o valor de $x$ de maneira a selecionar o $i$-esimo elemento de menor valor. Vamos abordar este problema de duas formas:
 
 Na primeira solução (solução `mergeSelect`) ordenaremos o conjunto de elementos em ordem crescente para, em seguida, acessar $a_i$ diretamente.
 
@@ -28,7 +28,7 @@ Conceitualmente, seu funcionamento se dá da seguinte maneira:
 
 3. resta apenas a lista original ordenada. A partir de então, para encontrar o $i$-ésimo menor elemento, basta referenciar o arranjo pelo índice $i$: `A[i]`.
 
-<img title="" src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Introdução%20à%20Análise%20de%20Algoritmos/Imagens/6c52e98c5f8c72034157c90f136b1ee0d1f2ce41.png" alt="" data-align="center" width="264">
+<img title="" src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Introdução%20à%20Análise%20de%20Algoritmos/Imagens/6c52e98c5f8c72034157c90f136b1ee0d1f2ce41.png" alt="" data-align="center" width="235">
 
 > Diagrama ilustrando os passos para execução do *Merge Sort* em uma sequência de 7 números inteiros.[^2]
 

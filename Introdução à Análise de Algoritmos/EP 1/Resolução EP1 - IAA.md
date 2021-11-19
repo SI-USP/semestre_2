@@ -316,7 +316,7 @@ Os seguintes gráfico e tabela relatam o resultado da experimentação:
 <img title="" src="file:///home/user/Public/USP/Sistemas de Informação/2º semestre/Introdução à Análise de Algoritmos/EP 1/Imagens/53ccaa02d734f310cfe4fca904e3cfd3d1a5a053.jpg" alt="" width="681" data-align="center">
 
 | Tamanho da entrada | Tempo de execução — *mergeSelect* | Tempo de execução — *quickSelect* |
-| ------------------ | ---------------------------------:| ---------------------------------:|
+|:------------------ | ---------------------------------:| ---------------------------------:|
 | 1                  | 4,39                              | 2,51                              |
 | 2                  | 8,35                              | 4,24                              |
 | 4                  | 14,27                             | 6,47                              |

@@ -20,5 +20,6 @@ int main () {
 		return 1;
 	}
 	printf("O %dº elemento de menor valor: %d\n", index, *(quickSelect(A, size, index - 1)));
+	free(A);
     return 0;
 }

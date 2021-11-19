@@ -22,5 +22,6 @@ int main () {
 	
 	mergeSort(A, size);
 	printf("O %dº elemento de menor valor: %d\n", index, A[index - 1]);
+	free(A);
     return 0;
 }

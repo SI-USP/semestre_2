@@ -1,22 +1,31 @@
 #include "./quick_select.h"
 
-int main () {
-    unsigned int i = 0, size = 1;
-	array A = malloc(size * sizeof(int));
-	int d, *result;
+int * readArray (int *size) {
+	int d, i = 0;
 	char c;
-
-	printf("Este programa admite uma lista de valores inteiros x tais que %d ≤ x ≤ %d e afere o valor do i-ésimo menor valor.\nDigite uma série de valores inteiros separadas entre si por espaço e pressione ENTER:\n", INT_MIN, INT_MAX);
+	array A;
+	
+	*size = 1;
+	A = malloc(sizeof(int));
 	do {
 		if (!scanf(" %d", &d))
 			continue;
-		if (i == size - 1) {
-			size *= 2;
-			A = realloc(A, size * sizeof(int));
+		if (i == *size - 1) {
+			*size *= 2;
+			A = realloc(A, *size * sizeof(int));
 		}
 		A[i++] = d;
 	} while ((c = getchar()) != EOF && c != '\n');
-	size = i;
+	*size = i;
+	return A;
+}
+
+int main () {
+    int i, size, d, *result;
+	array A;
+
+	printf("Este programa admite uma lista de valores inteiros x tais que %d ≤ x ≤ %d e afere o valor do i-ésimo menor valor.\nDigite uma série de valores inteiros separadas entre si por espaço e pressione ENTER:\n", INT_MIN, INT_MAX);
+	A = readArray(&size);
 
 	printf("Digite um índice i tal que 1 ≤ i ≤ %d: ", size);
 	if (!scanf(" %d", &d) || d <= 0 || d > size) {
@@ -32,5 +41,6 @@ int main () {
 	printf("\n");
 
 	printf("\nO %dº elemento de menor valor: %d\n", d, *result);
+	free(A);
     return 0;
 }

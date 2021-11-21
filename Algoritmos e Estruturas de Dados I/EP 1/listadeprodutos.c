@@ -61,19 +61,6 @@ PONT buscarIDTipo(PLISTA l, int id, int tipo){
   return NULL;
 }
 
-void buscarTudoSobre (PLISTA l, int id, int *tipo, PONT *atual, PONT *ant) {
-    for (*tipo = 0; *tipo < NUMTIPOS; *tipo = *tipo + 1){
-        *ant = l->LISTADELISTAS[*tipo];
-        *atual = (*ant)->proxProd;
-        while (*atual && (*atual)->id != id) {
-            *ant = *atual;
-            *atual = (*atual)->proxProd;
-        }
-        if (*atual)
-            return;
-    }
-}
-
 void exibirLog(PLISTA f){
   int numElementos = tamanho(f);
   printf("Log lista [elementos: %i]\n", numElementos);
@@ -119,13 +106,41 @@ int consultarValorUnitario(PLISTA l, int id){
 - Se o valor total for igual, inserir antes.
 */
 
+/* Funções auxiliares */
+
+bool buscarTudoSobre (PLISTA l, int id, int *tipo, PONT *atual, PONT *ant) {
+    for (*tipo = 0; *tipo < NUMTIPOS; *tipo = *tipo + 1){
+        *ant = l->LISTADELISTAS[*tipo];
+        *atual = (*ant)->proxProd;
+        while (*atual && (*atual)->id != id) {
+            *ant = *atual;
+            *atual = (*atual)->proxProd;
+        }
+        if (*atual)
+            return true;
+    }
+    return false;
+}
+
+void apagarRegistro(PONT atual, PONT ant) {
+    ant->proxProd = atual->proxProd;
+    free(atual);
+}
+
+/* Funções principais */
+
 bool inserirNovoProduto(PLISTA l, int id, int tipo, int quantidade, int valor){
     PONT p, novo;
 
-    if (id < 0 || tipo < 0 || quantidade < 0 || valor < 0 || buscarID(l, id))
+    if (id < 1
+    || tipo < 0
+    || tipo >= NUMTIPOS
+    || quantidade < 1
+    || valor < 1
+    || buscarID(l, id))
         return false;
 
-    novo = malloc(sizeof(*novo));
+    novo = malloc(sizeof(REGISTRO));
     novo->id = id;
     novo->quantidade = quantidade;
     novo->valorUnitario = valor;
@@ -141,52 +156,37 @@ bool inserirNovoProduto(PLISTA l, int id, int tipo, int quantidade, int valor){
 }
 
 bool removerItensDeUmProduto(PLISTA l, int id, int quantidade){
-    int tipo;
+    int tipo, valor;
     PONT atual, ant;
-    REGISTRO novo;
 
-    if (quantidade <= 0)
-        return false;
-
-    atual = ant = NULL;
-    buscarTudoSobre(l, id, &tipo, &atual, &ant);
-
-    if (!atual || quantidade > atual->quantidade)
+    if (quantidade <= 0
+    || !buscarTudoSobre(l, id, &tipo, &atual, &ant)
+    || quantidade > atual->quantidade)
         return false;
 
     atual->quantidade -= quantidade;
+    quantidade = atual->quantidade;
+    valor = atual->valorUnitario;
 
-    if (atual->quantidade * atual-> valorUnitario >= ant->quantidade * ant-> valorUnitario)
+    if (quantidade * valor > ant->quantidade * ant-> valorUnitario)
         return true;
 
-    novo = *atual;
-    ant->proxProd = atual->proxProd;
-    free(atual);
+    apagarRegistro(atual, ant);
 
-    if (novo.quantidade == 0)
+    if (quantidade == 0)
         return true;
-    return inserirNovoProduto(l, id, tipo, novo.quantidade, novo.valorUnitario);
+    return inserirNovoProduto(l, id, tipo, quantidade, valor);
 }
 
-
 bool atualizarValorDoProduto(PLISTA l, int id, int valor){
-    int tipo;
+    int tipo, quantidade;
     PONT atual, ant;
-    REGISTRO novo;
 
-    if (valor <= 0)
+    if (valor <= 0 || !buscarTudoSobre(l, id, &tipo, &atual, &ant))
         return false;
 
-    atual = ant = NULL;
-    buscarTudoSobre(l, id, &tipo, &atual, &ant);
+    quantidade = atual->quantidade;
+    apagarRegistro(atual, ant);
 
-    if (!atual)
-        return false;
-
-    atual->valorUnitario = valor;
-    novo = *atual;
-    ant->proxProd = atual->proxProd;
-    free(atual);
-
-    return inserirNovoProduto(l, id, tipo, novo.quantidade, novo.valorUnitario);
+    return inserirNovoProduto(l, id, tipo, quantidade, valor);
 }

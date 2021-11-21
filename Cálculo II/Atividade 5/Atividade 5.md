@@ -1,6 +1,6 @@
 # Atividade 5
 
-Resolução dos exercícios obrigatórios, feita por Guilherme de Abreu Barreto[^1].
+> Resolução dos exercícios obrigatórios, feita por Guilherme de Abreu Barreto[^1].
 
 ## Capítulo 12.1
 

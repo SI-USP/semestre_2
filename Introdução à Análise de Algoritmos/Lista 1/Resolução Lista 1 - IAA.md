@@ -6,24 +6,30 @@
 
 ```c
 m ← 0                                 // c_2
-for i ← 1 até n                       // c_2 + (n - 1) c_1
-    do for j ← 1 até n                // c_2 + (n - 1)² c_1
-        do for k ← 1 até n            // c_2 + (n - 1)³ c_1
+for i ← 1 até n                       // c_2 + c_5 + (n - 1) c_1
+    do for j ← 1 até n                // c_2 + c_5 + (n - 1)² c_1
+        do for k ← 1 até n            // c_2 + c_5 + (n - 1)³ c_1
             if a_i + b_j + c_k = 0    // n³ (2 c_3 + c_5)
-                then m ← m + 1        // 0 c_1 até n³ c_1
+                then m ← m + 1        // 0 (c_2 + c_3) até n³ (c_2 + c_3)
 return m                              // c_4
 ```
 
-Assim o sendo, temos que este algoritmo, na ausência de valores capazes de satisfazer a condição de iteração da variável $m$ (melhor caso) tem um tempo de execução equivalente à:
+> **Obs:** Admite-se
 
 $$
-(n^3 - 2n^2 + 2n - 1)c_1 + 4c_2 + 2n^3c_3 + c_4 + n^3c_5
+c_1 (\text{iteração})= c_3 (\text{soma}) + c_2 (\text{atribuição}) + c_5 (\text{comparação ‒ com o valor }n)
 $$
 
-Enquanto quando este encontra valores compatíveis, este tem um tempo de execução equivalente à:
+Assim o sendo, temos que este algoritmo, na ausência de valores capazes de satisfazer a condição de acréscimo da variável $m$ (melhor caso) tem um tempo de execução equivalente à:
 
 $$
-[2(n^3 - n^2 + n) - 1]c_1 + 4c_2 + 2n^3c_3 + c_4 + n^3c_5\ \blacksquare
+(n^3 - 2n^2 + n - 1)c_1 + 4c_2 + 2n^3 c_3 + c_4 + (n^3 + 3)c_5
+$$
+
+Enquanto quando este encontra apenas valores compatíveis (pior caso), este tem um tempo de execução equivalente à:
+
+$$
+(n^3 - 2n^2 + n - 1)c_1 + (n^3 + 4)c_2 + 3n^3 c_3 + c_4 + (n^3 + 3)c_5\ \blacksquare
 $$
 
 ## Exercício 2
@@ -40,20 +46,21 @@ $$
 0 \le c_1g(n) \le f(n) \le c_2g(n)
 $$
 
-Assim sendo, temos que em nosso caso $g(n) = n^3$, enquanto$f(n) = 4n^3 + n^2 + n + 2$ (a função equivalente ao pior caso, igualando as constantes à 1) Para qualquer $n \ge 1$. Assim sendo, tem-se:
+Assim sendo, temos que em nosso caso $g(n) = n^3$, enquanto a função equivalente ao pior caso, igualando as constantes à 1, e substituindo $c_1$ por $c_2 + c_3 + c_5$ é $f(n) = 8n^3 - 6 n^2 + 3n + 5$, para qualquer $n \ge 1$. Assim sendo, tem-se:
 
 $$
-0 \le c_1n^3 \le 4n^3 + n^2 + n + 2 \le c_2n^3\\\ \\
-0 \le c_1 \le 4 + \dfrac 1n + \dfrac 1{n^2} + \dfrac 2{n^3} \le c_2 \implies 0 \le c_1 \le 4\ e\ c_2 \ge 8
+0 \le c_1n^3 \le 8n^3 - 6n^2 + 3n + 5 \le c_2n^3
 $$
+
+Utilizando-se de uma calculadora eletrônica, obtemos que $0 \le c_1 ⪅ 2.16$ e $10 \le c_2$.
 
 De fato, vemos que este resultado se concretiza para valores de $n \ge 1$:
 
-![](/home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Introdução%20à%20Análise%20de%20Algoritmos/Imagens/2021-10-01-22-55-58-image.png)
+<img title="" src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Introdução%20à%20Análise%20de%20Algoritmos/Imagens/2021-10-18-13-22-07-image.png" alt="" width="485" data-align="center">
 
-> Linha verde: $f(n)$; linha cinza: $c_1g(n)$; e linha rosa: $c_2g(n)$
+> Linha azul: $f(n)$; linha verde: $2.16\,g(n)$; e linha vermelha: $10\,g(n)$
 
-Portanto, o tempo de processamento do algorítimo 3Soma é $\Theta(n^3)$ no pior caso. $\blacksquare$
+Portanto, o tempo de processamento do algoritmo 3Soma é $\Theta(n^3)$ no pior caso. $\blacksquare$
 
 ## Exercício 3
 
@@ -87,8 +94,8 @@ end
     m ← 0
 
     insertionSort (C, sizeof(C))
-    for i ← 1 to n
-        do for j ← 1 to n
+    for i ← 1 to sizeof(A)
+        do for j ← 1 to sizeof(B)
             do if binarySearch (C, sizeof(C), -(A[i] + B[j]))
                 then m ← m + 1
     return m
@@ -115,7 +122,7 @@ $$
 T(n) \in \Theta(n^2\log n)
 $$
 
-Sendo esta a linha com maior número de iterações no algoritmo `3Soma`, podemos, por extensão, afirmar que a notação $\Theta$  anteriormente descrita é representativa do tempo de execução do algoritmo como um todo. $\blacksquare$
+Sendo esta a linha com maior número de iterações no algoritmo `3Soma`, podemos, por extensão, afirmar que a notação $\Theta$ anteriormente descrita é representativa do tempo de execução do algoritmo como um todo. $\blacksquare$
 
 ## Exercício 4
 
@@ -145,4 +152,4 @@ Ao longo de sua execução, é invariável que $m$ equivale ao número de somas 
 
 RIBEIRO, M. **Introdução à Análise de Algoritmos**. Disponível em: <https://github.com/marciomr/apostila-iaa/blob/master/apostila-iaa.pdf>. Acesso em: 13 out. 2021.
 
-[^1]: nUSP: 12543033
+[^1]: nUSP: 12543033; Turma 04

@@ -55,5 +55,3 @@ O comprimento de um vetor tridimensional $\textbf a = \langle a_1,a_2, a_3 \rang
 $$
 |\textbf a | = \sqrt{a_1^2 + a_2^2 + a_3^2}
 $$
-
-

@@ -25,13 +25,13 @@ $$
 
 A resolução do sistema anteriormente descrito tem que $u = -4v = 4w$. Logo, $u + v -3w = e$ é uma possível solução do sistema onde $\exists\ a \not = 0$. O sistema em questão é, portanto, L. D. $\blacksquare$
 
-## Exercício 2 e 3
+## Exercícios 2 e 3
 
 Suponha que $\{v_1, \dots, v_n\}$ é um conjunto L.I. de um espaço vetorial. Mostrar que $\{a_1v_1, \dots , a_nv_n\}$ também é L.I., desde que os $a_i$'s sejam todos não nulos. O que acontece se um dos $a_i$'s for zero? Justifique.
 
 ### Resolução
 
-Sem perda de sentido, podemos renomear os vetores $\{a_1v_1, \dots , a_nv_n\}$ como $B = \{u_1, \dots, u_n\}$, onde $u_i$ é o vetor resultante produto escalar do vetor $v_i$ com a escalar $a_i$, para $1 \le i \le n$. Para $B$ ser L.I., conforme a definição de conjunto L.I., faz-se necessário que $b_1u_1 + \dots + b_nu_n = e$, onde $b_1 = \dots = b_n = 0$. Ora, a única maneira de se garantir que todos os $b$'s são nulos em uma sequência $b_1a_1u_1 + \dots + b_na_nu_n = 0$ é se todo $a \not = 0$ pois doutra forma um $b$ pareado com $0$ poderia assumir qualquer valor. $\blacksquare$
+Sem perda de sentido, podemos renomear os vetores $\{a_1v_1, \dots , a_nv_n\}$ como $B = \{u_1, \dots, u_n\}$, onde $u_i$ é o vetor resultante produto do vetor $v_i$ com o escalar $a_i$, para $1 \le i \le n$. Para $B$ ser L.I., conforme a definição de conjunto L.I., faz-se necessário que $b_1u_1 + \dots + b_nu_n = e$, onde $b_1 = \dots = b_n = 0$. Ora, a única maneira de se garantir que todos os $b$'s são nulos em uma sequência $b_1a_1u_1 + \dots + b_na_nu_n = 0$ é se todo $a \not = 0$ pois doutra forma um $b$ pareado com $0$ poderia assumir qualquer valor. $\blacksquare$
 
 ## Exercício 4
 
@@ -92,7 +92,7 @@ Por tratar-se de uma base, tem-se que:
 
 $0(v_1 + \dots + v_k + v_{k + 1} + \dots + v_n ) = e \implies \\ 0(v_1 + \dots + v_k) = -0(v_{k + 1} + \dots + v_n) \implies \\ 0(v_1 + \dots + v_k) = 0(v_{k + 1} + \dots + v_n)$
 
-Substituindo 0 por $c$, temos que a relação se mantém verdadeira. Aliás, isso só é possível se $c = 0$ por este é o único número de mesmo valor sendo positivo ou negativo. $\blacksquare$
+Substituindo 0 por $c$, temos que a relação se mantém verdadeira. Aliás, isso só é possível se $c = 0$, pois este é o único número de mesmo valor sendo positivo ou negativo. $\blacksquare$
 
 ## Exercício 7
 

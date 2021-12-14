@@ -42,7 +42,7 @@ Assim, A função $F(x,y)$ está definida para $\{(x,y) : x^2 + y^2 \not = 1\}$,
 
 ### Exercício 45
 
-Use a definição de derivadas parciais como limites 4 para encontrar $f_x(x, y)$ e $f_y(x, y)$ em
+Use a definição de derivadas parciais como limites para encontrar $f_x(x, y)$ e $f_y(x, y)$ em
 
 $$
 f(x,y) = xy^2 - x^3y

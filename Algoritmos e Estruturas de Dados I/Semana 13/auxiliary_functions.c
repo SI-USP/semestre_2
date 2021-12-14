@@ -3,8 +3,6 @@
 
 typedef struct node{
     int value;
-
-    /* Pointers to nodes which store values that are less or equal (le) and greater than (gt) the current node's. */
     struct node *parent, *le, *gt;
 } Node;
 
@@ -87,16 +85,4 @@ bool excludeNode(Node **root, int value) {
         return excludeNode((value > (*root)->value) ? &(*root)->gt : &(*root)->le, value);
     substituteNode(*root, selectBranch(*root));
     return true;
-}
-
-int treeSize (Node *root) {
-    if (!root)
-        return 0;
-    return treeSize(root->le) + treeSize(root->gt) + 1;
-}
-
-int main () {
-    Node *new = newNode(23), *r = NULL;
-    insertNode(&r,new);
-    return 0;
 }

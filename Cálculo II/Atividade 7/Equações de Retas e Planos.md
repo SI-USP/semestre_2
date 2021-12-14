@@ -18,7 +18,7 @@ Onde:
 
 - $t$ é o escalar que multiplica $\textbf v$ de tal forma que este assume a mesma magnitude e sentido que $\textbf a$.
   
-  >  Assim, para diferentes valores de $t$ correspondem distintos pontos $P_0$ em $L$:
+  >  Assim, para diferentes valores de $t$ correspondem distintos pontos $P$ em $L$:
   > 
   > <img src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Cálculo%20II/Atividade%207/Imagens/2021-11-02-11-36-15-image.png" title="" alt="" data-align="center">
 
@@ -38,7 +38,7 @@ $$
 Podemos observar que entre estas $t$ é um fator comum. Logo, para qualquer vetor $\textbf a$ na reta $L$ em que $a,b,c \in \R^*$a seguinte igualdade é verdadeira:
 
 $$
-\frac{x - x_0}a = \frac{x - y_0}b = \frac{z - z_0}c
+\frac{x - x_0}a = \frac{y - y_0}b = \frac{z - z_0}c
 $$
 
 Este conjunto de equações são denominadas **equações simétricas** de $L$.
@@ -81,7 +81,7 @@ $$
 Podemos pensar na reta como a intersecção de dois planos:
 
 $$
-\begin{matrix} \dfrac{x - x_0}a = \dfrac{x - y_0}b & e &\dfrac{x - y_0}b = \dfrac{z - z_0}c \end{matrix}
+\begin{matrix} \dfrac{x - x_0}a = \dfrac{y - y_0}b & e &\dfrac{y - y_0}b = \dfrac{z - z_0}c \end{matrix}
 $$
 
 Por exemplo, para uma reta $L$ descrita por
@@ -185,7 +185,9 @@ $$
 \therefore \theta = \cos^{-1} \left(\frac 2{\sqrt{42}}\right) \approx 72\degree
 $$
 
-**b.** Primeiro precisamos encontrar um ponto em $L$. Por exemplo, podemos achar o ponto onde a reta intercepta o plano $xy$ tomando $z = 0$ na equação dos dois planos. Isso fornece as equações $x + y = 1$ e $x - 2y = 1$, cuja solução é $x = 1$, $y = 0$. Portanto, o ponto $(1, 0, 0)$ encontra-se em $L$.
+**b.** Determine as equações simétricas da reta intersecção $L$ desses dois planos.
+
+Primeiro precisamos encontrar um ponto em $L$. Por exemplo, podemos achar o ponto onde a reta intercepta o plano $xy$ tomando $z = 0$ na equação dos dois planos. Isso fornece as equações $x + y = 1$ e $x - 2y = 1$, cuja solução é $x = 1$, $y = 0$. Portanto, o ponto $(1, 0, 0)$ encontra-se em $L$.
 
 Observe que, como $L$ pertence a ambos os planos, é perpendicular ao vetor normal de ambos os planos. Então, um vetor **v** paralelo a $L$ é dado pelo produto vetorial
 

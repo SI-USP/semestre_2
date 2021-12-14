@@ -11,18 +11,18 @@ São propriedades da adição em espaços vetoriais:
 1. Existe um elemento neutro, aqui indicado por e, que não altera o resultado de uma adição ao ser acrescentado nesta.
 
 $$
-\exist\ e \in V \mid u + e = u\ \ \ \ \ \  \forall u \in V
+\begin{matrix} \exist\ e \in V \mid u + e = u & \forall u \in V \end{matrix}
 $$
 
 2. Para todo elemento $u$ existe um *oposto* $(-u)$ tal que:
 
 $$
-\exist\ (-u) \in V \mid u + (-u) = e\ \ \ \ \ \  \forall u \in V
+\begin{matrix}  \exist\ (-u) \in V \mid u + (-u) = e & \forall u \in V \end{matrix}
 $$
 
 Assim o sendo,
 
-$u + v = u + w \implies u + v + e = u + w \implies u + v + u + (-u) = u + w \implies u + (-u) + v = u + (-u) + w \implies e + v = e + w \implies v = w\ \blacksquare$
+$u + v = u + w \implies u + v + e = u + w \implies u + v + u + (-u) = u + w\\ \implies u + (-u) + v = u + (-u) + w \implies e + v = e + w \implies v = w\ \blacksquare$
 
 ## Exercício 2
 
@@ -38,10 +38,10 @@ $$
 
 Assim,
 
-$$
-u + e  = u + g \implies u + e +e  = u + g
-\implies u + u + (-u) + e = u + g \implies u + (-u) + e = u + (-u) + g \implies e + e = e + g \implies e = g
-$$
+$u + e = u + g \implies u + e +e = u + g \\
+\implies u + u + (-u) + e = u + g \\
+\implies u + (-u) + e = u + (-u) + g \implies e + e = e + g\\
+ \implies e = g$
 
 Chegamos a uma contradição. Logo, pela definição de elemento nulo, só é possível a existência de um elemento deste tipo. $\blacksquare$
 
@@ -54,13 +54,13 @@ Para cada vetor u de um espaço vetorial V existe um único vetor $(-u)$ oposto 
 Novamente, procederemos por absurdo ao afirmar que existe um elemento $g \not = (-u)$ tal que satisfaz a condição de *oposto* de $u$:
 
 $$
-\exist\ g \in V \mid u + g = e \ \ \ \ \ \  \forall u \in V
+\begin{matrix} \exist\ g \in V \mid u + g = e & \forall u \in V \end{matrix}
 $$
 
 Lembrando que adições entre vetores possuem a propriedade de serem associativas:
 
 $$
-u + (v + w) = (u + v) + w \ \ \ \ \ \  \forall u,v,w \in V
+\begin{matrix} u + (v + w) = (u + v) + w & \forall u,v,w \in V \end{matrix}
 $$
 
 Logo,
@@ -73,17 +73,16 @@ Chegamos a uma contradição. Logo, pela definição de oposto, para cada $u$ ex
 
 ## Exercício 4
 
-Seja $V = \R^2$. Se $u = (x1, x2) \in V$ e$ v = (y1, y2) \in V $, então $V$ , com as
-operações de adição:
+Seja $V = \R^2$. Se $u = (x_1, x_2) \in V$ e $v = (y_1, y_2) \in V $, então $V$ , com as operações de adição:
 
 $$
-u + v = (x1 + y1, x2 + y2)
+u + v = (x_1 + y_1, x_2 + y_2)
 $$
 
 e multiplicação por escalar
 
 $$
-\alpha u = (\alpha^2x1, \alpha^2x2)
+\alpha u = (\alpha^2x_1, \alpha^2x_2)
 $$
 
 é um espaço vetorial sobre $\R$?
@@ -144,7 +143,7 @@ Um conjunto $W$ é subespaço se, e somente se,
 
 - É possível a adição: $(u, v) \in W \mapsto u + v \in W$
 
-- É possível a multiplicação escalar: $(a, u), a \in \R, u \in V \mapsto au \in V$
+- É possível a multiplicação escalar: $(a, u), a \in \R, u \in W \mapsto au \in W$
 
 Venhamos a conferir estas propriedades em cada caso:
 
@@ -178,7 +177,7 @@ $x + y + z = 0 \implies z = -(x + y)$. Então, se $u = (a, b, -(a + b))$ e $v = 
 
 $x^2 + y^2 + z^2 ≤ 1 \implies x = \pm \sqrt{1 - y^2 - z^2}$.
 
-**Soma:** $u + v  = \left(\pm \sqrt{1 - y_1^2 - z_1^2}, y_1, z_1\right) + \left(\pm \sqrt{1 - y_2^2 - z_2^2}, y_2, z_2 \right) = \left(\pm \sqrt{1 - y_1^2 - z_1^2} \pm \sqrt{1 - y_2^2 - z_2^2}, y_1 + y_2, z_1 + z_2 \right)$
+**Soma:** $u + v  = \left(\pm \sqrt{1 - y_1^2 - z_1^2}, y_1, z_1\right) + \left(\pm \sqrt{1 - y_2^2 - z_2^2}, y_2, z_2 \right)\\ = \left(\pm \sqrt{1 - y_1^2 - z_1^2} \pm \sqrt{1 - y_2^2 - z_2^2}, y_1 + y_2, z_1 + z_2 \right)$
 
 Assim o sendo, $W$ não é espaço vetorial pois:
 
@@ -206,7 +205,7 @@ $W_2 ⊆ W_1$.
 
 ### Resolução
 
-Procederemos nesta demonstração com uma prova por absurdo. Consideremos que existe $W_1 \cup W_2$ tal que $W_1 \not ⊆ W_2$ e $W_2 \not ⊆ W_1$. Logo, existem dados elementos elemento $u$ e $v$ tais que
+Procederemos nesta demonstração com uma prova por absurdo. Consideremos que existe $W_1 \cup W_2$ tal que $W_1 \not ⊆ W_2$ e $W_2 \not ⊆ W_1$. Logo, existem dados elementos $u$ e $v$ tais que
 
 $$
 \begin{matrix}

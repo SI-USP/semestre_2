@@ -19,9 +19,9 @@ $$
 = (\textbf a \times \textbf b) \cdot \textbf a
 $$
 
-<img src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Cálculo%20II/Atividade%206/Imagens/2021-10-19-12-39-44-image.png" title="" alt="" data-align="center">
+<img src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Cálculo%20II/Atividade%206/Imagens/220px-Right_hand_rule_cross_product.svg.png" title="" alt="" data-align="center">
 
-> A regra da mão direita fornece a direção de $\textbf a \times \textbf b$, ortogonal ao plano que contêm **a** e **b**.
+> A regra da mão direita fornece a direção de $\textbf a \times \textbf b$, ortogonal ao plano que contêm **a** e **b**. Nesta, um dos vetores aponta para o pulso enquanto os dedos da mão fecham-se em direção ao outro vetor pelo ângulo agudo entre estes. Nesta configuração, o polegar levantado aponta para $\textbf a \times \textbf b$.
 
 ### Propriedades
 
@@ -37,10 +37,25 @@ Se **a**, **b** e **c** são vetores e *c* é um escalar, então
 
 5. $(\textbf a + \textbf b) \times \textbf c = \textbf a \times \textbf c + \textbf b \times \textbf c$
 
-6. $\textbf a (\textbf b \times \textbf c) = (\textbf a \times \textbf b) \cdot \textbf c$
+6. $\textbf a \cdot (\textbf b \times \textbf c) = (\textbf a \times \textbf b) \cdot \textbf c$
 
 7. $\textbf a \times (\textbf b \times \textbf c) =
    (\textbf a \cdot \textbf c)\textbf b - (\textbf a \cdot \textbf b)\textbf c$
+
+Pela aplicação da propriedade 2 sobre as bases canônicas $\textbf i$, $\textbf j$ e $\textbf k$, obtemos
+
+$$
+\begin{matrix}
+\textbf i \times \textbf j = \textbf k &
+\textbf j \times \textbf k = \textbf i &
+\textbf k \times \textbf i = \textbf j \\
+\textbf j \times \textbf i = - \textbf k &
+\textbf k \times \textbf j = - \textbf i &
+\textbf i \times \textbf k = - \textbf j
+\end{matrix}
+$$
+
+Resultado este que pode ser verificado pela aplicação da **regra da mão direita**.
 
 ### Exemplo
 
@@ -103,3 +118,8 @@ $$
 ### Caso específico
 
 Se usarmos a fórmula anterior e descobrirmos que o volume do paralelepípedo determinado por **a**, **b** e **c** é 0, então os três vetores precisam pertencer ao mesmo plano; ou seja eles são **coplanares**.
+
+**Exemplo**
+
+$a = <1,5,-2>, b = <3,-1,0>, c = <5,9,-4> \\
+\therefore V = | \textbf a \cdot (\textbf b \times \textbf c)| = \left| \begin{matrix} 1 & 5 & -2 \\ 3 & -1 & 0 \\ 5 &  9 & -4 \end{matrix} \right| = 1 \left|\begin{matrix} -1 & 0 \\ 9 & -4 \end{matrix} \right| - 5 \left| \begin{matrix} 3 & 0 \\ 5 & -4 \end{matrix} \right| - 2 \left| \begin{matrix} 3 & -1 \\ 5 & 9 \end{matrix} \right|\\ = 1(4) - 5(-12) - 2(27 + 5) = 0$

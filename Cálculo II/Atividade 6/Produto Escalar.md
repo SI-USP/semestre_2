@@ -44,7 +44,7 @@ $$
 
 ### Demonstração
 
-Se aplicarmos a Lei dos Cossenos no triânglo $OAB$ da Figura 1, obteremos
+Se aplicarmos a Lei dos Cossenos no triângulo $OAB$ da Figura 1, obteremos
 
 $$
 |AB|^2 = |OA|^2 + |OB|^2 - 2 |OA||OB| \cos \theta

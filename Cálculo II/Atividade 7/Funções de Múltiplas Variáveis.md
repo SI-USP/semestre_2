@@ -20,4 +20,4 @@ As curvas de nível de uma função $f$ de duas variáveis são aquelas com equa
 
 ## Funções de Três ou Mais Variáveis
 
-Uma função com três variáveis $f$, é uma regra que associa a cada tripla ordenada $(x, y, z)$ em um domínio $D \subset \R^3$ um único número real, denotado por $f(x, y, z)$. Enquanto uma função com $n$ variáveis é uma regra que associa um número $z = f(x_1, x_2, \dots, x_n)$ a uma n-upla $(x_1, x_2, \dots, x_n)$ de números reais. Denotamos por $\R^n$ o conjunto de todas essas n-uplas.
+Uma função com três variáveis $f$, é uma regra que associa a cada tripla ordenada $(x, y, z)$ em um domínio $D \subset \R^3$ um único número real, denotado por $f(x, y, z)$. Enquanto uma função com $n$ variáveis é uma regra que associa um número $z = f(x_1, x_2, \dots, x_n)$ a uma n-upla $(y_1, y_2, \dots, y_n)$ de números reais. Denotamos por $\R^n$ o conjunto de todas essas n-uplas.

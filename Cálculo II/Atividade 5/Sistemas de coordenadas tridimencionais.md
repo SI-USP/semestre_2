@@ -36,3 +36,9 @@ $$
 $$
 
 Logo, as coordenadas $C(h, k, l)$ do centro da esfera são $(-2, 3, -1)$ e esta possui raio $2\sqrt 2$.
+
+## Equação do plano equidistante à dois pontos
+
+O conjunto de pontos $P$ equidistantes a dois pontos $A$ e $B$ é tal que $\{P:|AP| = |BP|\}$. Para pontos $P(x,y,z), A(x_A, y_A, z_A), B(x_A, y_A, z_A) \in \R^3$ a equação de tal plano fica
+
+$|AP| = |BP| \implies\\ \sqrt{(x - x_A)^2 + (y - y_A)^2 + (z - z_A)^2} = \sqrt{(x - x_B)^2 + (y - y_B)^2 + (z - z_B)^2} \implies \\ (x - x_A)^2 + (y - y_A)^2 + (z - z_A)^2 = (x - x_B)^2 + (y - y_B)^2 + (z - z_B)^2$

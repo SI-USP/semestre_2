@@ -10,7 +10,7 @@ Descreva em palavras a região de $\R^3$ representada pela equação $x = 5$.
 
 ### Resolução
 
-Plano vertical perpendicular ao eixo horizontal $x$, interceptando-o nos pontos aqueles que correspondem à reta $x = 5$.
+Plano paralelo ao plano $yz$, que cruza o eixo $x$ no ponto $5$.
 
 ### Exercício 37
 
@@ -38,14 +38,13 @@ Determine o vetor unitário com mesma direção e sentido que $8\textbf i - \tex
 
 #### Resolução
 
-Considerando $\textbf{i = j = k = 1}$, tem-se:
-
-$|8\textbf i - \textbf j + 4 \textbf k| = \sqrt{8^2 + (-1)^2 + 4^2} = \sqrt{64 + 1 + 16} = \sqrt{81} = 9$
-
-Portanto, pela equação dada, o vetor unitário é
+Um vetor unitário $\textbf u$ paralelo à $\textbf v = 8\textbf i - \textbf j + 4 \textbf k$ é 
 
 $$
-\frac 89\textbf i - \frac 19 \textbf j + \frac 49 \textbf k
+\textbf u = \dfrac{\textbf v}{|\textbf v|} =
+\dfrac{8\textbf i - \textbf j + 4 \textbf k}{\sqrt{8^2 + (-1)^2 + 4^2}} = 
+\dfrac{8\textbf i - \textbf j + 4 \textbf k}{\sqrt{81}} =
+\dfrac 89 \textbf i - \dfrac 19 \textbf j + \dfrac 49 \textbf k\ \blacksquare
 $$
 
 ### Exercício 31

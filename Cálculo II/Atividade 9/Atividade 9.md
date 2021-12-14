@@ -6,8 +6,7 @@
 
 ### Exercício 24
 
-O índice de sensação térmica $W$ é a temperatura sentida quando a temperatura real é $T$ e a velocidade do vento, $v$. Portanto, podemos escrever $W = f (T, v)$. A tabela de valores a seguir foi extraída da Tabela 1 da Seção 14.1. Use essa tabela para determinara aproximação linear da função de sensação térmica quando $T$ estiver a -15 ºC e $v$ estiver próximo de 50 km/h. Estime, a seguir, a sensação térmica quando a temperatura estiver a -17 ºC
-e a velocidade do vento for de 55 km/h.
+O índice de sensação térmica $W$ é a temperatura sentida quando a temperatura real é $T$ e a velocidade do vento, $v$. Portanto, podemos escrever $W = f (T, v)$. A tabela de valores a seguir foi extraída da Tabela 1 da Seção 14.1. Use essa tabela para determinara aproximação linear da função de sensação térmica quando $T$ estiver a -15 ºC e $v$ estiver próximo de 50 km/h. Estime, a seguir, a sensação térmica quando a temperatura estiver a -17 ºC e a velocidade do vento for de 55 km/h.
 
 <img src="file:///home/user/Public/USP/Sistemas%20de%20Informação/2º%20semestre/Cálculo%20II/Atividade%209/Imagens/2021-11-16-11-32-12-image.png" title="" alt="" data-align="center">
 
@@ -67,7 +66,7 @@ Derivamos então as equações das curvas para obter a reta tangente destas:
 
 - $\textbf r_2(u) = \lang 1 + u^2, 2u^3 - 1, 2u + 1 \rang \implies \textbf r_2'(u) = \lang 2u, 6u, 2 \rang$
 
-Com as retas tangentes conseguimos obter a reta normal $\textbf n$, perpendicular à ambas, no ponto $P = (2, 1, 3)$:
+Com as retas tangentes conseguimos obter a reta normal $\textbf n$, ortogonal à ambas, no ponto $P = (2, 1, 3)$:
 
 $\textbf r_1'(0) \times \textbf r_2'(1) = \lang 3, 0 , -4 \rang \times \lang 2, 6, 2 \rang \\ = \lang 0 \cdot 2 - (-4 \cdot 6), -4 \cdot 2 - 3 \cdot 2, 3 \cdot 6 - 0 \cdot 2 \rang = \lang 24, -14, 18 \rang$
 

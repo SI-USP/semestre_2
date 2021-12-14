@@ -18,7 +18,7 @@ O plano cruza
 
 - o eixo y em $2(0) + 5y + (0) = 10 \implies y = 2$
 
-- o eixo z em $2(0) + 5(0) + z = 10 \implies z = 10$
+- o eixo z em $2(0) + 5(0) + z = 10 \implies z = 10\ \blacksquare$
 
 ### Exercício 71
 
@@ -28,7 +28,8 @@ Determine a distância do ponto $(1, -2, 4)$ ao plano $3x + 2y + 6z = 5$.
 
 $$
 D = \frac{|ax + by + cz + d|}{\sqrt{a^2 + b^2 + c^2}}
-= \frac{|3(1) + 2(-2) + 6(4) - 5|}{\sqrt{9 + 4 + 36}} = \frac{18}7
+= \frac{|3(1) + 2(-2) + 6(4) - 5|}{\sqrt{9 + 4 + 36}}
+= \frac{18}7\ \blacksquare
 $$
 
 ## Capítulo 14.1
@@ -49,7 +50,7 @@ Mapa de contorno para valores $10 | k$ tais que $-10^6 \le k \le 10^6$:
 
 ### Exercício 71
 
-Utilize um computador para traçar o gráfico da função $f(x, y) = 3x - x^4 - 4y^2 - 10xy$ usando vários domínios e pontos de vista. Imprima aquela que apre sente melhor os “picos e vales”. Você acha que essa função tem um valor máximo? Você poderia identificar os pontos do gráfico corres- pondentes aos “máximos locais”? E aos “mínimos locais”?
+Utilize um computador para traçar o gráfico da função $f(x, y) = 3x - x^4 - 4y^2 - 10xy$ usando vários domínios e pontos de vista. Imprima aquela que apresente melhor os “picos e vales”. Você acha que essa função tem um valor máximo? Você poderia identificar os pontos do gráfico correspondentes aos “máximos locais”? E aos “mínimos locais”?
 
 #### Resolução
 

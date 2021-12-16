@@ -30,26 +30,28 @@ int ** initializeTable (Item *list, int size, int capacity) {
 }
 
 void printSelection (Item *list, int **results, int size, int capacity) {
-    int i, j = -1, total = 0, *index = malloc(size * sizeof(int));
+    int i = -1, total = 0, *index = malloc(size * sizeof(int));
 
-    for (i = size; capacity > 0 && i > 0; i--) {
-        if (results[i][capacity] == results[i - 1][capacity])
-            continue;
-        capacity -= list[i - 1].weight;
-        total += list[i - 1].value;
-        index[++j] = i - 1;
+    while (size > 0) {
+        if (results[size][capacity] != results[size - 1][capacity]) {
+            capacity -= list[size - 1].weight;
+            total += list[size - 1].value;
+            index[++i] = size - 1;
+        }
+        free(results[size--]);
     }
+    free(*results);
+    free(results);
 
-    while (j >= 0) {
+    while (i >= 0) {
         printf("Item: %-5d Valor: %5d Peso: %5d Razão: %f\n",
-        index[j] + 1, list[index[j]].value, list[index[j]].weight,
-        (float) list[index[j]].value / list[index[j]].weight);
-        j--;
+        index[i] + 1, list[index[i]].value, list[index[i]].weight,
+        (float) list[index[i]].value / list[index[i]].weight);
+        i--;
     }
 
     printf("Capacidade restante da mochila: %d\n", capacity);
     printf("Valor total armazenado: %d\n", total);
-    free(results);
 }
 
 void dynamicKnapsack (Item *list, int size) {

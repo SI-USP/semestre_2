@@ -49,6 +49,7 @@ void printSelection (Item *list, int **results, int size, int capacity) {
         (float) list[index[i]].value / list[index[i]].weight);
         i--;
     }
+    free(index);
 
     printf("Capacidade restante da mochila: %d\n", capacity);
     printf("Valor total armazenado: %d\n", total);

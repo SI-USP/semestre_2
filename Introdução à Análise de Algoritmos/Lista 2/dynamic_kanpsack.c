@@ -49,6 +49,7 @@ void printSelection (Item *list, int **results, int size, int capacity) {
         (float) list[index[i]].value / list[index[i]].weight);
         i--;
     }
+    free(list);
     free(index);
 
     printf("Capacidade restante da mochila: %d\n", capacity);
@@ -61,7 +62,6 @@ void dynamicKnapsack (Item *list, int size) {
     scanf(" %d", &capacity);
     printf("Capacidade da mochila: %d\nConteúdos:\n", capacity);
     printSelection(list, initializeTable(list, size, capacity), size, capacity);
-    free(list);
 }
 
 int main () {

@@ -52,7 +52,7 @@ Representação de matrizes esparsas utilizando listas encadeadas. Estruturas de
 
 - EP 1: [enunciado](http://www.each.usp.br/digiampietri/ACH2023/ep1/ep1_enunciado.pdf), [resolução](Algoritmos%20e%20Estruturas%20de%20Dados%20I/EP%201/listadeprodutos.c)
 
-- EP 2: [enunciado](http://www.each.usp.br/digiampietri/ACH2023/ep2/ep2_enunciado.pdf), [resolução]()
+- EP 2: [enunciado](http://www.each.usp.br/digiampietri/ACH2023/ep2/ep2_enunciado.pdf), [resolução](Algoritmos%20e%20Estruturas%20de%20Dados%20I/EP%202/filapreferencial.c)
 
 - EP 3: [enunciado](http://www.each.usp.br/digiampietri/ACH2023/ep3/ep3_enunciado.pdf), [resolução](Algoritmos%20e%20Estruturas%20de%20Dados%20I/EP%202/filapreferencial.c)
 
@@ -68,7 +68,7 @@ Integrais.
 
 #### Semana 1
 
-- [Importantes tabelas de Cálculo](C%C3%A1lculo%20II/Semana%2001/Importantes%20tabelas%20de%20C%C3%A1lculo.pdf)
+- [Importantes tabelas de Cálculo](raw/C%C3%A1lculo%20II/Semana%2001/Importantes%20tabelas%20de%20C%C3%A1lculo.pdf)
 
 - [Propriedades dos integrais e somatórios](C%C3%A1lculo%20II/Semana%2001/Propriedades%20dos%20integrais%20e%20somat%C3%B3rios.pdf)
 

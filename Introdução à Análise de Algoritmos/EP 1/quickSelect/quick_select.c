@@ -23,7 +23,7 @@ int * quickSelect (array A, int size, int i) {
 	if (size <= 1)
 		return A;
 	pivot = partition(A, i, size);
-	if (A + pivot == A + i)
+	if (pivot == i)
 		return A + i;
 	if (i < pivot)
 		return quickSelect(A, pivot, i);

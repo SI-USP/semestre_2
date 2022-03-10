@@ -56,6 +56,8 @@ Pedro não compareceu.
 
 Então Quércia compareceu.
 
+## 6.
+
 | $p$                         | V   | V   | F   | F   |
 | --------------------------- |:---:|:---:|:---:|:---:|
 | $q$                         | V   | F   | V   | F   |

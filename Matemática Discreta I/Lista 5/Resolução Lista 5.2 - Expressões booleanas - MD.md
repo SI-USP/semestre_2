@@ -6,33 +6,45 @@
 
 ### 1.
 
-**a.** $\alpha(a,b) = (ab + ab')(a' + b) = a(a' + b) = aa' + b = 0 + b = b \\ \therefore \alpha(0,0) = 0,\ \alpha(0,1) = 1,\ \alpha (1,0) = 0,\ \alpha(1,1) = 1$
+**a.** $\alpha(a,b) = (ab + ab')(a' + b) = \cancel{aba'} + abb + \cancel{ab'a'} + \cancel{ab'b} = ab \\ \therefore \alpha(0,0) = 0,\ \alpha(0,1) = 0,\ \alpha (1,0) = 0,\ \alpha(1,1) = 1$
 
-**b.** $\beta(a,b) = (a + ab + b)(a + b') = (a + b)(a + b') = a + (b + b')\\ = a + 1 = 1 \therefore \beta(0,0) = 1,\ \beta(0,1) = 1,\ \beta(1,0) = 1,\ \beta(1,1) = 1$
+**b.** $\beta(a,b) = (a + ab + b)(a + b') = (a + b)(a + b') = a + ab + ab + ab'\\ = a \therefore \beta(0,0) = 0,\ \beta(0,1) = 0,\ \beta(1,0) = 1,\ \beta(1,1) = 1$
 
 **c.** $\gamma(a,b,c) = (a + b + c)(a' + b' + c') = \cancel{aa'} + ab' + ac' + ba' + \cancel{bb'}\\ + bc' + ca' + cb' + \cancel{cc'}$
 
 Sempre que algum elemento igualar a 1 e outro a 0, esta expressão será equivalente à 1 e, senão, à 0.
 
-**d.** $\delta (a,b,c) = (a + b'c)(b + c') = ab + ac' + \cancel{b'ab + b'cc'} = a\\ \therefore \delta(0,0,0) = 0,\ \delta(0,0,1) = 0,\ \delta(0,1,0) = 0,\ \delta(0,1,1) = 0,\\  \delta(1,0,0) = 1,\ \delta(1,0,1) = 1, \delta(1,1,0) = 1, \delta(1,1,1) = 1$
+**d.** $\delta (a,b,c) = (a + b'c)(b + c') = ab + ac' + \cancel{b'ab + b'cc'} = a(b + c')\\ \therefore \delta(0,0,0) = 0,\ \delta(0,0,1) = 0,\ \delta(0,1,0) = 0,\ \delta(0,1,1) = 0,\\  \delta(1,0,0) = 1,\ \delta(1,0,1) = 0, \delta(1,1,0) = 1, \delta(1,1,1) = 1$
 
 ### 2.
 
-**a.** e, b, 1
+**a.** e, ab, f
 
-**b.** 1, 1, 1
+**b.** d, a, b
 
-**c.** 1, ae + ad + bf + b + ef + e , 1
+**c.**
 
-**d.** e, 1, f
+- $\gamma (1,e,a) = 1b + \cancel{0e} + ef + ba + \cancel{a0} + f1 = b + f$
 
-**e.** 1, b(a + e)
+- $\gamma(a,b,e) = ae + fb + bb + ee + ef + ba = b + e = 1$
+
+- $\gamma(1, f, 0) = 1a + \cancel{0f} + f1 + \cancel{a0} + \cancel{00} + 11 = a + f = 1$
+
+**d.**
+
+- $\delta (e,c,1) = e(c + 0) = ec$;
+
+- $\delta(1, a, b) = 1(a + e) = a + e$
+
+- $\delta (f, d, d) = f (d + c) = f1 = f$
+
+**e.** ae, $e(a + 0)(\cancel{be} + \cancel{eb} + bd + ec + ce + db) = ea(bd + ce) = \cancel{abde} + ac = ac$
 
 ### 3.
 
 **a.** $a(ab' + a'b) = ab' + \cancel{aa'b} = ab'$
 
-**b.** $a(a' + b') = ab'$
+**b.** $a(a' + b')' = a(ab) =aab = ab$
 
 **c.** $(a + b)(b + c)(c + a) = (\cancel{ab} + ac + b + bc)(c + a) =\\ ac + bc + \cancel{bc} + \cancel{ac} + ab + abc = ab + bc + ca$
 
@@ -54,7 +66,7 @@ Sempre que algum elemento igualar a 1 e outro a 0, esta expressão será equival
 
 ### 5.
 
-**a.** $(\overline{A \cup B}) \cap (B \cup \overline C) \equiv (ab)'(b + c') = (a' + b')(b + c')\\ = a'b + ac' + b'c' \equiv (\overline A \cap B) \cup (A \cap \overline C) \cup (\overline B \cap \overline C)$
+**a.** $(\overline{A \cup B}) \cap (B \cup \overline C) \equiv (a + b)'(b + c') = (a'b')(b + c')\\ = 0 + a'b'c' \equiv \overline A \cap \overline B \cap \overline C$
 
 **b.** $(\overline{B \cap C}) \cap (\overline{\overline A \cap C}) = (bc)'(a'c)' = (b' + c')(a + c') =\\ ab' +b'c' + ac' + c' = ab' + c' \equiv (A \cap \overline B) \cup C$
 

@@ -6,19 +6,19 @@
 
 ### 1.
 
-**a.**$(a + b)c'$;
+**a.**($a'+ b')c$;
 
-**b.** $bc + ca = c(a + b)$. Forma dual: $ab + c$;
+**b.** $bc + ca = c(a + b)$. Forma dual: $c' + a'b'$;
 
-**c.** $a' + b + c$;
+**c.** $a + b' + c'$;
 
-**d.** $ab(b + c') = abb + abc' = (ab) + (ab)c' = ab$. Forma dual: $a + b$;
+**d.** $ab(b + c') = abb + abc' = (ab) + (ab)c' = ab$. Forma dual: $a' + b'$;
 
-**e.** $(a + b)(b + c)(c + a)$;
+**e.** $(a' + b')(b' + c')(c' + a')$;
 
 ### 2.
 
-A algebra booleana está definida nos seguintes termos:
+A álgebra booliana está definida nos seguintes termos:
 
 - Existe um conjunto (no caso, $B$) contendo pelo menos dois elementos ditos **especiais**:
   
@@ -36,7 +36,7 @@ A algebra booleana está definida nos seguintes termos:
   
   - No caso, a operação é denotada pelo sinal $'$ e os elementos complementares entre si são $a$ com $f$, $b$ com $e$, $c$ com $d$, $0$ com $1$.
 
-Fica demonstrada a relação de $\mathscr B$ com a álgebra booleana.
+Fica demonstrada a relação de $\mathscr B$ com a álgebra booliana.
 
 ### 3.
 
@@ -44,7 +44,7 @@ Fica demonstrada a relação de $\mathscr B$ com a álgebra booleana.
 
 - $a + 1 = mmc(a,1) = a$;
 
-- $a * D_N = mdc(a, D_N)$, como $a \le D_N$, então $mdc(a,D_N) = a$.
+- $a * N = mdc(a, N)$, como $a \le N$, $N \mid a$ então $mdc(a,N) = a$.
 
 **b,c e d.** Uma sêxtupla de elementos constitui uma álgebra booleana se cinco propriedades são satisfeitas, demonstradas à seguir, $\forall a, b, c \in \N - \{1,0\}$:
 
@@ -64,7 +64,7 @@ $\bullet\ a + (b * c) = mmc(a,mdc(b,c)) = mdc(mmc(a,b), mmc(a,c)) =  (a + b) * (
 
 **Prova**
 
-Quaisquer números $a,b \in \N$ tais que $a > 1$ e $b > 1$ podem ser escritos como produtos de potências dos mesmos $n$ números primos $p$, ainda que por diferentes expoentes ($k$ e $l$)[^2]:
+Quaisquer números $a,b \in \N$ tais que $a, b > 1$ podem ser escritos como produtos de potências dos mesmos $n$ números primos $p$, ainda que por diferentes expoentes ($k$ e $l$)[^2]:
 
 $$
 \begin{matrix}
@@ -128,15 +128,15 @@ $\displaystyle mdc(a,mmc(b,c)) = \prod^n_{i = 1} p_i^{\min(k_i,\max(l_i,m_i))} =
 
 **P4.** Identidade
 
-- $a + 1 = mmc(a,1) = a$
+- $\displaystyle a + 1 = mmc(a,1) = a$
 
-- $a * D_N = mdc(a, D_N) = a$
+- $a * N = mdc(a, N) = a$
 
 **P5.** Complementariedade
 
-- $a + a' = mmc(a, \underbrace{D_N \bmod a}_{\nmid\ a}) = \underbrace{D_N}_{\mid\ a}$
+- $\displaystyle a + a' = mmc(a, N/a) = N$, se $N/a \nmid a$
 
-- $a * a' = mdc(a, \underbrace{D_N \bmod a}_{\nmid\ a}) = \underbrace{1}_{\mid\ a}$
+- $a * a' = mdc(a, N/a) = 1$, se $N/a \nmid a$
 
 Assim, a $\mathscr B = \lang D_N, +, *, ', 1, N \rang$ tal qual definida pelo enunciado **pode** constituir uma álgebra booleana, a depender do valor $N \in \N$. Analisemos os casos apresentados: $D_{70}, D_{15}$ e $D_18$. Nestes três as propriedades **P1** à **P4** se sustentam, mas a propriedade **P5** apresenta divergência:
 
@@ -175,9 +175,20 @@ $D_{18}:$
 
 Destes três conjuntos, apenas os dois primeiros conjuntos satisfazem a definição de álgebra booleana. $\blacksquare$
 
+**e.**  Prosseguiremos em nossa demonstração por contradição. Por hipótese, $D_N$ constitui uma algebra booleana e possui a propriedade de complementariedade $p * p' = mdc(p, N/p) = 1$, onde $1 < p < N$. Também,  $N \mid p$ e $N \mid p^2$. Assim,
+
+$$
+\begin{cases} N = p \cdot p' \\ N = p^2 \cdot (p^2)' \end{cases}
+\therefore p' = (p^2)' \cdot p
+$$
+
+E portanto, $p * p' = mdc(p, p') = mdc(p,(p^2)' \cdot p) = p$, chegamos à uma contradição. Logo, não é possível $D_N$ constituir uma álgebra booleana se esta contêm tanto a $p$ e $p^2$. $\blacksquare$
+
 ### 4.
 
 **a.** Usando as definições das operações $*$,$+$ e $'$ obtemos os seguintes resultados quando os valores de $a$, $b$ e $c$ são $0$ ou $1$:
+
+Para $ab + c = (a + c)(b + c)$:
 
 | $a$ | $b$ | $c$ | $ab$ | $ab + c$ |
 |:---:|:---:|:---:|:----:|:--------:|
@@ -201,7 +212,29 @@ Destes três conjuntos, apenas os dois primeiros conjuntos satisfazem a definiç
 | 1   | 1   | 0   | 1         | 1         | **1**            |
 | 1   | 1   | 1   | 1         | 1         | **1**            |
 
-Observa-se que as formas $ab + c$ e $(a + c)(b + c)$ são equivalentes, o mesmo é verdade para $(a + b)c = ac + bc$ já que esta é a expressão *dual*[^4] da anterior.
+Para $(a + b)c = ac + bc$:
+
+| $a$ | $b$ | $c$ | $(a + b)$ | $(a + b)c$ |
+|:---:|:---:|:---:|:---------:|:----------:|
+| 0   | 0   | 0   | 0         | **0**      |
+| 0   | 0   | 1   | 0         | **0**      |
+| 0   | 1   | 0   | 1         | **0**      |
+| 0   | 1   | 1   | 1         | **1**      |
+| 1   | 0   | 0   | 1         | **0**      |
+| 1   | 0   | 1   | 1         | **1**      |
+| 1   | 1   | 0   | 1         | **0**      |
+| 1   | 1   | 1   | 1         | **1**      |
+
+| $a$ | $b$ | $c$ | $ac$ | $bc$ | $ac + bc$ |
+|:---:|:---:|:---:|:----:|:----:|:---------:|
+| 0   | 0   | 0   | 0    | 0    | **0**     |
+| 0   | 0   | 1   | 0    | 0    | **0**     |
+| 0   | 1   | 0   | 0    | 0    | **0**     |
+| 0   | 1   | 1   | 0    | 1    | **1**     |
+| 1   | 0   | 0   | 0    | 0    | **0**     |
+| 1   | 0   | 1   | 1    | 0    | **1**     |
+| 1   | 1   | 0   | 0    | 0    | **0**     |
+| 1   | 1   | 1   | 1    | 1    | **1**     |
 
 **b.**
 
@@ -212,7 +245,12 @@ Observa-se que as formas $ab + c$ e $(a + c)(b + c)$ são equivalentes, o mesmo 
 | 1   | 0   | 1       | 0    | **0**  | **0**      |
 | 1   | 1   | 1       | 1    | **0**  | **0**      |
 
-Observa-se que as formas $(a + b)'$ e $a'b'$ são equivalentes, o mesmo é verdade para $(ab)'$ e $a' + b'$ já que esta é a expressão *dual* da anterior.
+| $a$ | $b$ | $ab$ | $(ab)'$ | $a' + b'$ |
+|:---:|:---:|:----:|:-------:|:---------:|
+| 0   | 0   | 0    | **1**   | **1**     |
+| 0   | 1   | 0    | **1**   | **1**     |
+| 1   | 0   | 0    | **1**   | **1**     |
+| 1   | 1   | 1    | **0**   | **0**     |
 
 ### 5.
 

@@ -24,7 +24,7 @@ end
 Um exemplo de saída de um programa escrito de acordo com tal algoritmo[^3] é:
 
 ```shell
-> time ./greedy_bag.out < test.txt
+> time ./greedy_knapsack.out < test.txt
 Capacidade da mochila: 1350
 Conteúdos:
 Item: 7     Valor:   830 Peso:    56 Razão: 14.821428
@@ -67,7 +67,7 @@ O algoritmo apresentado trata-se de um *algoritmo de aproximação*. Isto é, es
 
 Selecionar os itens 2 e 3 garantem o maior valor total para a capacidade da mochila: 6. Não obstante o algoritmo guloso selecionará armazenar o item 1 pois este possui a melhor razão valor por peso dos três: (1,6̅ > 1,5) e assim esgotará a capacidade da mochila com um valor total de 5.
 
-A margem em questão para este algoritmo guloso é a garantia que este preenche *pelo menos* metade da capacidade da mochila com itens de maior valor possível. Mas este não garante que a mochila seja preenchida em sua inteiridade com itens de maior valor possível, o que é a proposta do problema. $\blacksquare$
+A margem em questão para este algoritmo guloso é a garantia que este preenche *pelo menos* metade da capacidade da mochila com itens de maior valor possível. Mas este não garante que a mochila seja preenchida em sua totalidade com itens de maior valor possível, o que é a proposta do problema. $\blacksquare$
 
 ## Exercício 2
 
@@ -82,15 +82,14 @@ dynamicKnapsack (v,w,n,W)
             if (w[i - 1] > j - 1), then
                 M[i,j] ← M[i - 1,j]
             else
-                M ← max(M[i - 1,j], v[i - 1] + M[i - 1,j - w[i - 1]])
+                M[i,j] ← max(M[i - 1,j], v[i - 1] + M[i - 1,j - w[i - 1]])
     k ← 0
-    for i ← n + 1 to 1, do
-        if (j = 1), then
-            break
+    for i ← n + 1 to 2, do
         if (M[i][j] = M[i - 1][j]), then
             continue
-        j - w[i - 1]
-        I[++k] = i - 1
+        j ← j - w[i - 1]
+        k ← k + 1
+        I[k] ← i - 1
     end
     return I
 end
@@ -99,7 +98,7 @@ end
 Um exemplo de saída de um programa escrito de acordo com tal algoritmo[^4] para a mesma entrada[^5] utilizada para o programa anterior é:
 
 ```shell
-> time ./dynamic_bag.out < test.txt
+> time ./dynamic_knapsack.out < test.txt
 Capacidade da mochila: 1350
 Conteúdos:
 Item: 7     Valor:   830 Peso:    56 Razão: 14.821428
@@ -121,13 +120,13 @@ Executed in    3,29 millis    fish           external
 >   
 ```
 
-Este algoritmo contempla todas as combinações de elementos por isso possuir tempo de execução exponencial $\theta(2^n)$ o qual observaríamos em soluções recursivas de força bruta. Ao armazenar resultados parciais, a solução apresenta um tempo de execução pseudo-polinomial proporcional às dimensões da matriz, $\theta((n + 1)(W + 1))$; assim como ocupa espaço de memória nesta mesma proporção. $\blacksquare$
+Este algoritmo contempla todas as combinações de elementos sem por isso possuir tempo de execução exponencial $\theta(2^n)$ o qual observaríamos em soluções recursivas de força bruta. Ao armazenar resultados parciais, a solução apresenta um tempo de execução pseudo-polinomial proporcional às dimensões da matriz, $\theta((n + 1)(W + 1))$; assim como ocupa espaço de memória nesta mesma proporção. $\blacksquare$
 
 ## Exercício 3
 
 Thomas Cormen, et al.[^6], descrevem uma variedade de métodos de análise amortizada passíveis de avaliar o tempo de execução do algoritmo proposto. Dentre os quais, estes exemplificam o uso do denominado *método contábil*. Este último consiste em 
 
->  [Atribuírmos] cobranças diferentes a operações diferentes, sendo que algumas operações são cobradas a mais ou a menos do que realmente custam. Denominamos **custo amortizado** o valor que cobramos por uma operação. Quando o custo amortizado de uma operação excede seu custo real, atribuímos a diferença a objetos específicos na estrutura de dados como **crédito**. Mais adiante, o crédito pode ajudar a pagar operações posteriores cujo custo amortizado é menor que seu custo real. Assim, podemos considerar o custo amortizado de uma operação como repartido entre seu custo real e o crédito que é depositado ou consumido.
+>  [Atribuirmos] cobranças diferentes a operações diferentes, sendo que algumas operações são cobradas a mais ou a menos do que realmente custam. Denominamos **custo amortizado** o valor que cobramos por uma operação. Quando o custo amortizado de uma operação excede seu custo real, atribuímos a diferença a objetos específicos na estrutura de dados como **crédito**. Mais adiante, o crédito pode ajudar a pagar operações posteriores cujo custo amortizado é menor que seu custo real. Assim, podemos considerar o custo amortizado de uma operação como repartido entre seu custo real e o crédito que é depositado ou consumido.
 
 Os custos amortizados das operações são escolhidos cuidadosamente, de forma que, no pior caso, "o custo amortizado total de uma sequência de operações dá um limite superior para o custo real total da sequência." Tal que
 
@@ -137,12 +136,18 @@ $$
 
 Sendo $c_i$ o custo real da i-ésima operação, $ĉ_i$ o custo amortizado da mesma, e portanto a diferença entre estes valores o crédito armazenado (Ibid.).
 
-Ao analizar a operação de incrementar um contador binário para um arranjo $A$ de $k$ bits inicialmente igual a zero Carmen, et al., designa um custo amortizado de 2 unidades para a operação de atribuir o valor 1 a um bit (operação descrita na linha 6, "ligar um bit"). Uma unidade é imediatamente consumida pela operação, enquanto a outra é armazenada enquanto crédito.
+Ao analisar a operação de incrementar um contador binário para um arranjo $A$ de $k$ bits inicialmente todos iguais a zero, é possível notar que toda operação de atribuir o valor 0 a um bit (linha 3), ou "desligá-lo" é contingente a uma operação anterior de atribuí-lo o valor 1 (linha 6), ou "ligá-lo". Por isso, Cormen, et al., designam um custo amortizado de 2 unidades para a operação de atribuir o valor 1 a um bit. Uma unidade é imediatamente consumida pela operação, enquanto a outra é armazenada enquanto crédito para seu eventual desligamento.
 
-Assim, o custo de se desligar bits na linha 3 no interior do laço while é pago cada qual com o crédito acumulado por estes ao serem ligados. O procedimento *INCREMENTA* liga no máximo um bit por execução e, portanto, o custo amortizado de uma operação *INCREMENTA* é de no máximo 2 unidades. A quantidade de 1s no contador nunca se torna negativa e, portanto, a quantia de crédito permanece não negativa o tempo todo. Assim, para $n$ operações *INCREMENTA*, o custo amortizado total é $O(n)$, o que, pela fórmula anteriormente descrita, trata-se do limite superior do custo real total. $\blacksquare$
+Assim, o custo de se desligar bits no interior do laço *while* é pago cada qual com o crédito acumulado por estes ao serem ligados. O procedimento *INCREMENTA* liga no máximo um bit por execução e, portanto, o custo amortizado de uma operação *INCREMENTA* é de no máximo 2 unidades. A quantidade de 1s no contador nunca se torna negativa e, portanto, a quantia de crédito permanece não negativa o tempo todo. Assim, para $n$ operações *INCREMENTA*, o custo amortizado total é assintoticamente equivalente a $O(n),$ o que, pela fórmula anteriormente descrita, trata-se do pior caso do custo real total. $\blacksquare$
 
 [^1]: Número USP: 12543033; Turma: 04.
 
 [^2]: DANTZIG, G. B. Discrete-Variable Extremum Problems. **Operations Research**, v. 5, n. 2, p. 266–288, 1 abr. 1957.
+
+[^3]: BARRETO, G. **greedy_knapsack.c**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/Lista%202/greedy_knapsack.c. Acesso em: 14 dec. 2021.
+
+[^4]: BARRETO, G. **dynamic_knapsack.c**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/Lista%202/dynamic_kanpsack.c. Acesso em: 14 dec. 2021.
+
+[^5]: BARRETO, G. **test.txt**. Disponível em: https://git.disroot.org/SI/semestre_2/src/branch/master/Introdu%c3%a7%c3%a3o%20%c3%a0%20An%c3%a1lise%20de%20Algoritmos/Lista%202/test.txt. Acesso em: 14 dec. 2021.
 
 [^6]: CORMEN, T. et al. **Algoritmos: teoria e prática**. Tradução: Arlete Marques. 3. ed. Rio de Janeiro: Elsevier, 2012.

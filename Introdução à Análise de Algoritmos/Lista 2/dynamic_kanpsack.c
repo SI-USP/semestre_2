@@ -29,7 +29,7 @@ int ** initializeTable (Item *list, int size, int capacity) {
     return results;
 }
 
-void printSelection (Item *list, int **results, int size, int capacity) {
+void outputSelection (Item *list, int **results, int size, int capacity) {
     int i = -1, total = 0, *index = malloc(size * sizeof(int));
 
     while (size > 0) {
@@ -61,7 +61,7 @@ void dynamicKnapsack (Item *list, int size) {
 
     scanf(" %d", &capacity);
     printf("Capacidade da mochila: %d\nConteúdos:\n", capacity);
-    printSelection(list, initializeTable(list, size, capacity), size, capacity);
+    outputSelection(list, initializeTable(list, size, capacity), size, capacity);
 }
 
 int main () {

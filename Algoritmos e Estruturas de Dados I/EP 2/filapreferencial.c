@@ -85,16 +85,14 @@ bool inserirPessoaNaFila(PFILA f, int id, bool ehPreferencial){
     pessoa = malloc(sizeof(ELEMENTO));
     pessoa->id = id;
     pessoa->ehPreferencial = ehPreferencial;
-    if (ehPreferencial) {
+    if (ehPreferencial)
         pessoa->prox = f->inicioNaoPref;
-        pessoa->ant = f->inicioNaoPref->ant;
-    }
     else {
         pessoa->prox = f->cabeca;
-        pessoa->ant = f->cabeca->ant;
         if (f->inicioNaoPref == f->cabeca)
             f->inicioNaoPref = pessoa;
     }
+    pessoa->ant = pessoa->prox->ant;
     pessoa->prox->ant = pessoa->ant->prox = pessoa;
 	return true;
 }

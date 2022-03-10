@@ -115,7 +115,7 @@ $$
 
 ## 7.
 
-**(a)** Tautologia
+**(a)** Tautologia: $(p \to q) \lor p \equiv (\neg p \lor q) \lor p \equiv (\neg p \lor p) \lor (q \lor p) \equiv V \lor (q \lor p) \equiv V$
 
 | $p$ | $q$ | $(p \to q) \lor p$ |
 |:---:|:---:|:------------------:|

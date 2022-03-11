@@ -68,80 +68,80 @@ Integrais.
 
 #### Semana 1
 
-- [Importantes tabelas de Cálculo](raw/C%C3%A1lculo%20II/Semana%2001/Importantes%20tabelas%20de%20C%C3%A1lculo.pdf)
+- [Importantes tabelas de Cálculo](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Importantes%20tabelas%20de%20C%C3%A1lculo.pdf)
 
-- [Propriedades dos integrais e somatórios](C%C3%A1lculo%20II/Semana%2001/Propriedades%20dos%20integrais%20e%20somat%C3%B3rios.pdf)
+- [Propriedades dos integrais e somatórios](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Propriedades%20dos%20integrais%20e%20somat%C3%B3rios.pdf)
 
 #### Semana 2
 
-- [Integrais indefinidas e o Teorema da Variação Total](C%C3%A1lculo%20II/Semana%2002/Integrais%20Indefinidas%20e%20o%20Teorema%20da%20Varia%C3%A7%C3%A3o%20Total.pdf)
-- [O Teorema Fundamental do Cálculo](C%C3%A1lculo%20II/Semana%2002/O%20Teorema%20Fundamental%20do%20C%C3%A1lculo.pdf)
+- [Integrais indefinidas e o Teorema da Variação Total](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2002/Integrais%20Indefinidas%20e%20o%20Teorema%20da%20Varia%C3%A7%C3%A3o%20Total.pdf)
+- [O Teorema Fundamental do Cálculo](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2002/O%20Teorema%20Fundamental%20do%20C%C3%A1lculo.pdf)
 
 #### Semana 3
 
-- [A Regra da Substituição](C%C3%A1lculo%20II/Semana%2003/A%20Regra%20da%20Substitui%C3%A7%C3%A3o.pdf)
+- [A Regra da Substituição](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2003/A%20Regra%20da%20Substitui%C3%A7%C3%A3o.pdf)
 
-- [Integração por partes](C%C3%A1lculo%20II/Semana%2003/Integra%C3%A7%C3%A3o%20por%20partes.pdf)
+- [Integração por partes](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2003/Integra%C3%A7%C3%A3o%20por%20partes.pdf)
 
 #### Semana 4
 
-- [Integrais impróprias](C%C3%A1lculo%20II/Semana%2004/Integrais%20impr%C3%B3prias.pdf)
-- [Aplicações da Integração](C%C3%A1lculo%20II/Semana%2004/Aplica%C3%A7%C3%B5es%20da%20Integra%C3%A7%C3%A3o.pdf)
+- [Integrais impróprias](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2004/Integrais%20impr%C3%B3prias.pdf)
+- [Aplicações da Integração](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2004/Aplica%C3%A7%C3%B5es%20da%20Integra%C3%A7%C3%A3o.pdf)
 
 #### Semana 5
 
-- [Sistemas de coordenadas tridimensionais](C%C3%A1lculo%20II/Semana%2005/Sistemas%20de%20coordenadas%20tridimensionais.pdf)
+- [Sistemas de coordenadas tridimensionais](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2005/Sistemas%20de%20coordenadas%20tridimensionais.pdf)
 
-- [Vetores](C%C3%A1lculo%20II/Semana%2005/Vetores.pdf)
+- [Vetores](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2005/Vetores.pdf)
 
 #### Semana 6
 
-- [Produto Escalar](C%C3%A1lculo%20II/Semana%2006/Produto%20Escalar.pdf)
+- [Produto Escalar](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2006/Produto%20Escalar.pdf)
 
-- [Produto Vetorial](C%C3%A1lculo%20II/Semana%2006/Produto%20Vetorial.pdf)
+- [Produto Vetorial](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2006/Produto%20Vetorial.pdf)
 
 #### Semana 7
 
-- [Equações de Retas e Planos](C%C3%A1lculo%20II/Semana%2007/Equa%C3%A7%C3%B5es%20de%20Retas%20e%20Planos.pdf)
+- [Equações de Retas e Planos](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2007/Equa%C3%A7%C3%B5es%20de%20Retas%20e%20Planos.pdf)
 
-- [Funções de Múltiplas Variáveis](C%C3%A1lculo%20II/Semana%2007/Fun%C3%A7%C3%B5es%20de%20M%C3%BAltiplas%20Vari%C3%A1veis.pdf)
+- [Funções de Múltiplas Variáveis](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2007/Fun%C3%A7%C3%B5es%20de%20M%C3%BAltiplas%20Vari%C3%A1veis.pdf)
 
 #### Semana 8
 
-- [Derivadas parciais](C%C3%A1lculo%20II/Semana%2008/Derivadas%20parciais.pdf)
-- [Limites e Continuidade](C%C3%A1lculo%20II/Semana%2008/Limites%20e%20continuidade.pdf)
+- [Derivadas parciais](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2008/Derivadas%20parciais.pdf)
+- [Limites e Continuidade](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2008/Limites%20e%20continuidade.pdf)
 
 #### Semana 9
 
-- [Planos Tangentes e Aproximações Lineares](C%C3%A1lculo%20II/Semana%2009/Planos%20Tangentes%20e%20Aproxima%C3%A7%C3%B5es%20Lineares.pdf)
-- [Regra da Cadeia](C%C3%A1lculo%20II/Semana%2009/Regra%20da%20Cadeia.pdf)
+- [Planos Tangentes e Aproximações Lineares](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2009/Planos%20Tangentes%20e%20Aproxima%C3%A7%C3%B5es%20Lineares.pdf)
+- [Regra da Cadeia](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2009/Regra%20da%20Cadeia.pdf)
 
 #### Semana 10
 
-- [Derivadas direcionais e o vetor gradiente](C%C3%A1lculo%20II/Semana%2010/Derivadas%20direcionais%20e%20o%20vetor%20gradiente.pdf)
-- [Valores Máximo e Mínimo](C%C3%A1lculo%20II/Semana%2010/Valores%20M%C3%A1ximo%20e%20M%C3%ADnimo.pdf)
+- [Derivadas direcionais e o vetor gradiente](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2010/Derivadas%20direcionais%20e%20o%20vetor%20gradiente.pdf)
+- [Valores Máximo e Mínimo](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2010/Valores%20M%C3%A1ximo%20e%20M%C3%ADnimo.pdf)
 
 ### Listas
 
-- [Semana 1](C%C3%A1lculo%20II/Semana%201)
+- [Semana 1](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%201.pdf)
 
-- [Semana 2](C%C3%A1lculo%20II/Semana%202)
+- [Semana 2](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%202.pdf)
 
-- [Semana 3](C%C3%A1lculo%20II/Semana%203)
+- [Semana 3](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%203.pdf)
 
-- [Semana 4](C%C3%A1lculo%20II/Semana%204)
+- [Semana 4](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%204.pdf)
 
-- [Semana 5](C%C3%A1lculo%20II/Semana%205)
+- [Semana 5](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%205.pdf)
 
-- [Semana 6](C%C3%A1lculo%20II/Semana%206)
+- [Semana 6](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%206.pdf)
 
-- [Semana 7](C%C3%A1lculo%20II/Semana%207)
+- [Semana 7](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%207.pdf)
 
-- [Semana 8](C%C3%A1lculo%20II/Semana%208)
+- [Semana 8](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%208.pdf)
 
-- [Semana 9](C%C3%A1lculo%20II/Semana%209)
+- [Semana 9](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%209.pdf)
 
-- [Semana 10](C%C3%A1lculo%20II/Semana%2010)
+- [Semana 10](https://git.disroot.org/SI/semestre_2/raw/branch/master/C%C3%A1lculo%20II/Semana%2001/Atividade%2010.pdf)
 
 ## Introdução à Análise de Algoritmos
 
@@ -151,11 +151,11 @@ Técnicas de desenvolvimento de algoritmos baseadas em indução fraca e forte, 
 
 ### Listas e exercício de programação
 
-- [Lista 1](Introdu%C3%A7%C3%A3o%20%C3%A0%20An%C3%A1lise%20de%20Algoritmos/Lista%201/Resolu%C3%A7%C3%A3o%20Lista%201%20-%20IAA.pdf)
+- [Lista 1](https://git.disroot.org/SI/semestre_2/raw/branch/master/Introdu%C3%A7%C3%A3o%20%C3%A0%20An%C3%A1lise%20de%20Algoritmos/Lista%201/Resolu%C3%A7%C3%A3o%20Lista%201%20-%20IAA.pdf)
 
-- [EP](Introdu%C3%A7%C3%A3o%20%C3%A0%20An%C3%A1lise%20de%20Algoritmos/EP%201/Resolu%C3%A7%C3%A3o%20EP%201.pdf)
+- [EP](https://git.disroot.org/SI/semestre_2/raw/branch/master/Introdu%C3%A7%C3%A3o%20%C3%A0%20An%C3%A1lise%20de%20Algoritmos/EP%201/Resolu%C3%A7%C3%A3o%20EP%201.pdf)
 
-- [Lista 2](Introdu%C3%A7%C3%A3o%20%C3%A0%20An%C3%A1lise%20de%20Algoritmos/Lista%202/Resolu%C3%A7%C3%A3o%20Lista%202%20-%20IAA.pdf)
+- [Lista 2](https://git.disroot.org/SI/semestre_2/raw/branch/master/Introdu%C3%A7%C3%A3o%20%C3%A0%20An%C3%A1lise%20de%20Algoritmos/Lista%202/Resolu%C3%A7%C3%A3o%20Lista%202%20-%20IAA.pdf)
 
 ## Matemática Discreta
 
@@ -193,64 +193,64 @@ MDC e o algoritmo de Euclides.
 
 ### Resumos
 
-- [Enumeração e combinatória](Matem%C3%A1tica%20Discreta%20I/Lista%206/Enumera%C3%A7%C3%A3o%20e%20Combinat%C3%B3ria.pdf)
-- [Princípio do Pombal](Matem%C3%A1tica%20Discreta%20I/Lista%206/Princ%C3%ADpio%20do%20Pombal.pdf)
+- [Enumeração e combinatória](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%206/Enumera%C3%A7%C3%A3o%20e%20Combinat%C3%B3ria.pdf)
+- [Princípio do Pombal](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%206/Princ%C3%ADpio%20do%20Pombal.pdf)
 
 ### Listas
 
 #### Lista 1
 
-- [Enunciado](Matem%C3%A1tica%20Discreta%20I/Lista%201/Lista%201%20-%20Enunciado.pdf)
+- [Enunciado](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%201/Lista%201%20-%20Enunciado.pdf)
 
-- [Resolução parte 1: Lógica elementar](Matem%C3%A1tica%20Discreta%20I/Lista%201/L%C3%B3gica%20elementar.pdf)
+- [Resolução parte 1: Lógica elementar](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%201/L%C3%B3gica%20elementar.pdf)
 
-- [Resolução parte 2: Argumentos](Matem%C3%A1tica%20Discreta%20I/Lista%201/Argumentos.pdf)
+- [Resolução parte 2: Argumentos](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%201/Argumentos.pdf)
 
 #### Lista 2
 
-- [Enunciado](Matem%C3%A1tica%20Discreta%20I/Lista%202/Enunciado%20-%20Lista%202.pdf)
+- [Enunciado](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%202/Enunciado%20-%20Lista%202.pdf)
 
-- [Resolução parte 1: Funções proposicionais e quantificadores](Matem%C3%A1tica%20Discreta%20I/Lista%202/Resolu%C3%A7%C3%A3o%20Lista%202-1%20-%20Fun%C3%A7%C3%B5es%20proposicionais%20e%20quantificadores.pdf)
+- [Resolução parte 1: Funções proposicionais e quantificadores](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%202/Resolu%C3%A7%C3%A3o%20Lista%202-1%20-%20Fun%C3%A7%C3%B5es%20proposicionais%20e%20quantificadores.pdf)
 
-- [Resolução parte 2: Estratégias de demonstração](Matem%C3%A1tica%20Discreta%20I/Lista%202/Resolu%C3%A7%C3%A3o%20Lista%202-2%20-%20Estrat%C3%A9gias%20de%20demonstra%C3%A7%C3%A3o.pdf)
+- [Resolução parte 2: Estratégias de demonstração](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%202/Resolu%C3%A7%C3%A3o%20Lista%202-2%20-%20Estrat%C3%A9gias%20de%20demonstra%C3%A7%C3%A3o.pdf)
 
 #### Lista 3
 
-- [Enunciado](Matem%C3%A1tica%20Discreta%20I/Lista%203/Enunciado%20Lista%203.pdf)
+- [Enunciado](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%203/Enunciado%20Lista%203.pdf)
 
-- [Resolução](Matem%C3%A1tica%20Discreta%20I/Lista%203/Resolu%C3%A7%C3%A3o%20Lista%203%20-%20MD.pdf)
+- [Resolução](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%203/Resolu%C3%A7%C3%A3o%20Lista%203%20-%20MD.pdf)
 
 #### Lista 4
 
-- [Enunciado](Matem%C3%A1tica%20Discreta%20I/Lista%204/Enunciado%20Lista%204.pdf)
+- [Enunciado](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%204/Enunciado%20Lista%204.pdf)
 
-- [Resolução parte 1: Relações](Matem%C3%A1tica%20Discreta%20I/Lista%204/Resolu%C3%A7%C3%A3o%20Lista%204.1%20-%20Rela%C3%A7%C3%B5es%20-%20MD.pdf)
+- [Resolução parte 1: Relações](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%204/Resolu%C3%A7%C3%A3o%20Lista%204.1%20-%20Rela%C3%A7%C3%B5es%20-%20MD.pdf)
 
-- [Resolução parte 2: Funções](Matem%C3%A1tica%20Discreta%20I/Lista%204/Resolu%C3%A7%C3%A3o%20Lista%204.2%20-%20Fun%C3%A7%C3%B5es%20-%20MD.pdf)
+- [Resolução parte 2: Funções](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%204/Resolu%C3%A7%C3%A3o%20Lista%204.2%20-%20Fun%C3%A7%C3%B5es%20-%20MD.pdf)
 
 #### Lista 5
 
-- [Enunciado](Matem%C3%A1tica%20Discreta%20I/Lista%205/Enunciado%20Lista%205.pdf)
+- [Enunciado](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%205/Enunciado%20Lista%205.pdf)
 
-- [Resolução parte1: Algebra Booleana](Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.1%20-%20Algebras%20Booleanas%20-%20MD.pdf)
+- [Resolução parte1: Algebra Booleana](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.1%20-%20Algebras%20Booleanas%20-%20MD.pdf)
 
-- [Resolução parte 2: Expressões Booleanas](Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.2%20-%20Express%C3%B5es%20Booleanas%20-%20MD.pdf)
+- [Resolução parte 2: Expressões Booleanas](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.2%20-%20Express%C3%B5es%20Booleanas%20-%20MD.pdf)
 
-- [Resolução parte 3: Formas Disjuntivas Mínimas](Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.3%20-%20Formas%20Disjuntivas%20M%C3%ADnimas%20-%20MD.pdf)
+- [Resolução parte 3: Formas Disjuntivas Mínimas](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.3%20-%20Formas%20Disjuntivas%20M%C3%ADnimas%20-%20MD.pdf)
 
-- [Resolução parte 4: Circuitos Digitais](Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.4%20-%20Circuitos%20Digitais%20-%20MD.pdf)
+- [Resolução parte 4: Circuitos Digitais](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%205/Resolu%C3%A7%C3%A3o%20Lista%205.4%20-%20Circuitos%20Digitais%20-%20MD.pdf)
 
 #### Lista 6
 
-- [Enunciado](Matem%C3%A1tica%20Discreta%20I/Lista%206/Enunciado%20Lista%206.pdf)
+- [Enunciado](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%206/Enunciado%20Lista%206.pdf)
 
-- [Resolução parte 1: Permutações e Combinações](Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.1%20-%20Permuta%C3%A7%C3%B5es%20e%20combina%C3%A7%C3%B5es%20-%20MD.pdf)
+- [Resolução parte 1: Permutações e Combinações](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.1%20-%20Permuta%C3%A7%C3%B5es%20e%20combina%C3%A7%C3%B5es%20-%20MD.pdf)
 
-- [Resolução parte 2: Coeficientes Binomiais](Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.2%20-%20Coeficientes%20binomiais%20-%20MD.pdf)
+- [Resolução parte 2: Coeficientes Binomiais](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.2%20-%20Coeficientes%20binomiais%20-%20MD.pdf)
 
-- [Resolução parte 3: Princípio do Pombal](Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.3%20-%20Princ%C3%ADpio%20do%20Pombal%20-%20MD.pdf)
+- [Resolução parte 3: Princípio do Pombal](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.3%20-%20Princ%C3%ADpio%20do%20Pombal%20-%20MD.pdf)
 
-- [Resolução parte 4: Princípio da inclusão-exclusão](Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.4%20-%20Princ%C3%ADpio%20da%20inclus%C3%A3o-exclus%C3%A3o%20-%20MD.pdf)
+- [Resolução parte 4: Princípio da inclusão-exclusão](https://git.disroot.org/SI/semestre_2/raw/branch/master/Matem%C3%A1tica%20Discreta%20I/Lista%206/Resolu%C3%A7%C3%A3o%20Lista%206.4%20-%20Princ%C3%ADpio%20da%20inclus%C3%A3o-exclus%C3%A3o%20-%20MD.pdf)
 
 ## Matriz Vetores e Geometria Analítica
 
@@ -260,28 +260,28 @@ Sistemas de equações lineares, operações matriciais, inversão de matrizes, 
 
 #### Resumos
 
-1. [Definição de espaço vetorial](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/01%20-%20Defini%C3%A7%C3%A3o%20de%20Espa%C3%A7o%20Vetorial.pdf)
+1. [Definição de espaço vetorial](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/01%20-%20Defini%C3%A7%C3%A3o%20de%20Espa%C3%A7o%20Vetorial.pdf)
 
-2. [Propriedades do espaço vetorial](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/02%20-%20Propriedades%20do%20Espa%C3%A7o%20Vetorial.pdf)
+2. [Propriedades do espaço vetorial](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/02%20-%20Propriedades%20do%20Espa%C3%A7o%20Vetorial.pdf)
 
-3. [Definição de sub-espaço vetorial](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/03%20-%20Defini%C3%A7%C3%A3o%20de%20sub-espa%C3%A7o%20vetorial.pdf)
+3. [Definição de sub-espaço vetorial](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/03%20-%20Defini%C3%A7%C3%A3o%20de%20sub-espa%C3%A7o%20vetorial.pdf)
 
-4. [Dependência linear](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/04%20-%20Depend%C3%AAncia%20linear.pdf)
+4. [Dependência linear](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/04%20-%20Depend%C3%AAncia%20linear.pdf)
 
-5. [Base de um espaço vetorial finitamente gerado](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/05%20-%20Base%20de%20um%20espa%C3%A7o%20vetorial%20finitamente%20gerado.pdf)
+5. [Base de um espaço vetorial finitamente gerado](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/05%20-%20Base%20de%20um%20espa%C3%A7o%20vetorial%20finitamente%20gerado.pdf)
 
-6. [Dimensão](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/06%20-%20Dimens%C3%A3o.pdf)
+6. [Dimensão](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/06%20-%20Dimens%C3%A3o.pdf)
 
-7. [Matriz de mudança de base](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/06%20-%20Dimens%C3%A3o.pdf)
+7. [Matriz de mudança de base](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/06%20-%20Dimens%C3%A3o.pdf)
 
-8. [Transformações Lineares](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/08%20-%20Transforma%C3%A7%C3%B5es%20Lineares.pdf)
+8. [Transformações Lineares](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Resumos/08%20-%20Transforma%C3%A7%C3%B5es%20Lineares.pdf)
 
 #### Listas
 
-- [Lista 1](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%201%20-%20MVGA.pdf)
+- [Lista 1](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%201%20-%20MVGA.pdf)
 
-- [Lista 2](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%202%20-%20MVGA.pdf)
+- [Lista 2](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%202%20-%20MVGA.pdf)
 
-- [Lista 3](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%203%20-%20MVGA.pdf)
+- [Lista 3](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%203%20-%20MVGA.pdf)
 
-- [Lista 4](Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%204%20-%20MVGA.pdf)
+- [Lista 4](https://git.disroot.org/SI/semestre_2/src/branch/master/Matrizes%2C%20Vetores%20e%20Geometria%20Anal%C3%ADtica/Listas/Resolu%C3%A7%C3%A3o%20Lista%204%20-%20MVGA.pdf)

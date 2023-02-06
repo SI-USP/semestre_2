@@ -1,0 +1,40 @@
+inicializa 3
+insere 1
+insere 3
+insere 7
+insere 10
+insere 11
+insere 13
+insere 14
+insere 15
+insere 18
+insere 16
+insere 19
+insere 24
+insere 25
+insere 26
+insere 21
+insere 4
+insere 5
+insere 20
+insere 22
+insere 2
+insere 17
+insere 12
+insere 6
+imprime
+remove 6
+imprime
+remove 13
+imprime
+remove 7
+imprime
+remove 4
+imprime
+remove 2
+imprime
+remove 16
+imprime
+fim
+
+

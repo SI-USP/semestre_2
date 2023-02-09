@@ -8,7 +8,7 @@
 | [Computação Orientada a Objetos](#computação-orientada-a-objetos)                                                         | 9.3  |
 | Introdução à Administração e Economia para Computação                                                                     | 9.5  |
 | [Introdução à Estatística](#introdução-à-estatística)                                                                     | 6.6  |
-| [Introdução À Teoria da Computação](#introdução-à-teoria-da-computação)                                                   | 6.9  |
+| [Introdução à Teoria da Computação](#introdução-à-teoria-da-computação)                                                   | 6.9  |
 | [Organização e Arquitetura de Computadores I](#organização-e-arquitetura-de-computadores-i)                              | 6.0  |
 | Média ponderada ao final do semestre                                                                                      | 8.5  |
 
@@ -20,15 +20,18 @@ Estruturas de dados para representação de grafos e seus algoritmos (buscas em 
 
 ### Conteúdo
 
-- Listas
+- [Listas](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Listas)
 
 - Exercícios de programação
     
-    - Árvore B;
-    - Tabela de Espalhamento (*Hash Map* ou *Hash Table*);
-    - Grafos e algoritmo de Prim
+    - [Árvore B](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/B-Tre
+    e);
+    - [Tabela de Espalhamento (*Hash Map* ou *Hash Table*)](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/HashMa
+    p);
+    - [Grafos e algoritmo de Prim](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/Grafo
+    s)
 
-- Resolução de Provas
+- [Resolução de Provas](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Provas)
 
 ## Computação Orientada a Objetos
 
@@ -38,11 +41,23 @@ Conceitos de orientação a objetos e suas aplicações em linguagens de program
 
 ### Conteúdo
 
-- Resumo dos conceitos abordados;
+- [Resumo dos conceitos abordados](https://git.disroot.org/SI/semestre_3/src/branch/main/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objeto/Resumo:%20Computa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos%20%28COO%29.md);
 
-- Resolução da Lista de exercícios;
+- [Resolução (incompleta) da Lista de exercícios](https://git.disroot.org/SI/semestre_3/src/branch/main/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objeto/Computa%C3%A7%C3%A3o%20Orientada%20a%20Objetos:%20Lista%20de%20Exerc%C3%ADcios.pdf);
 
 - Exercício de Programação;
+
+## Introdução á Estatística
+
+### Programa
+
+Noções de probabilidade. Variáveis aleatórias e principais distribuições discretas e contínuas. Inferência: estimação pontual e intervalar. Abordagem clássica e/ou bayesiana. Testes de hipóteses para média, variância e proporção. Noções de estatística não paramétrica: testes de aderência e independência.
+
+### Conteúdo
+
+- [Resumos](https://git.disroot.org/SI/semestre_3/src/branch/main/Introdu%C3%A7%C3%A3o%20%C3%A0%20Estat%C3%ADstica/Resumos)
+
+- [Resolução de exercícios](https://git.disroot.org/SI/semestre_3/src/branch/main/Introdu%C3%A7%C3%A3o%20%C3%A0%20Estat%C3%ADstica/Exerc%C3%ADcios)
 
 ## Introdução à Teoria da Computação
 
@@ -54,9 +69,9 @@ Autômatos Finitos e Linguagens Regulares: sistemas de estados finitos, autômat
 
 ### Conteúdo
 
-- Notas de aula
+- [Notas de aula](https://git.disroot.org/SI/semestre_3/src/branch/main/Teoria%20da%20Computa%C3%A7%C3%A3o/Notas%20de%20aula)
 
-- Resolução de exercícios recomendados
+- [Resolução de exercícios recomendados](https://git.disroot.org/SI/semestre_3/src/branch/main/Teoria%20da%20Computa%C3%A7%C3%A3o/Cap%C3%ADtulo%201:%20Resolu%C3%A7%C3%A3o%20dos%20exerc%C3%ADcios%20recomendados.pdf)
 
 ## Organização e Arquitetura de Computadores
 
@@ -64,7 +79,9 @@ Revisão de conceitos sobre operações e expressões lógicas e tabela-verdade.
 
 ### Conteúdo
 
-- Notas de aula
+- [Notas de aula](https://git.disroot.org/SI/semestre_3/src/branch/main/Organiza%C3%A7%C3%A3o%20e%20Arquitetura%20de%20Computadores%20I/Notas%20de%20aula)
 
-- Provas
+- [Circuítos (arquivos para o Logisim)](https://git.disroot.org/SI/semestre_3/src/branch/main/Organiza%C3%A7%C3%A3o%20e%20Arquitetura%20de%20Computadores%20I/Circuitos)
+
+- [Provas](https://git.disroot.org/SI/semestre_3/src/branch/main/Organiza%C3%A7%C3%A3o%20e%20Arquitetura%20de%20Computadores%20I/Provas)
 

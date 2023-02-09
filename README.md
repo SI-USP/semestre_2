@@ -24,12 +24,9 @@ Estruturas de dados para representação de grafos e seus algoritmos (buscas em 
 
 - Exercícios de programação
     
-    - [Árvore B](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/B-Tre
-    e);
-    - [Tabela de Espalhamento (*Hash Map* ou *Hash Table*)](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/HashMa
-    p);
-    - [Grafos e algoritmo de Prim](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/Grafo
-    s)
+    - [Árvore B](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/B-Tree)
+    - [Tabela de Espalhamento (*Hash Map* ou *Hash Table*)](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/HashMap)
+    - [Grafos e algoritmo de Prim](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Exerc%C3%ADcios%20de%20Programa%C3%A7%C3%A3o/Grafos)
 
 - [Resolução de Provas](https://git.disroot.org/SI/semestre_3/src/branch/main/Algoritmos%20e%20Estruturas%20de%20Dados%20II/Provas)
 
@@ -41,11 +38,11 @@ Conceitos de orientação a objetos e suas aplicações em linguagens de program
 
 ### Conteúdo
 
-- [Resumo dos conceitos abordados](https://git.disroot.org/SI/semestre_3/src/branch/main/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objeto/Resumo:%20Computa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos%20%28COO%29.md);
+- [Resumo dos conceitos abordados](https://git.disroot.org/SI/semestre_3/src/branch/main/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objeto/Resumo:%20Computa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos%20%28COO%29.md)
 
-- [Resolução (incompleta) da Lista de exercícios](https://git.disroot.org/SI/semestre_3/src/branch/main/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objeto/Computa%C3%A7%C3%A3o%20Orientada%20a%20Objetos:%20Lista%20de%20Exerc%C3%ADcios.pdf);
+- [Resolução (incompleta) da lista de exercícios](https://git.disroot.org/SI/semestre_3/src/branch/main/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objeto/Computa%C3%A7%C3%A3o%20Orientada%20a%20Objetos:%20Lista%20de%20Exerc%C3%ADcios.pdf)
 
-- Exercício de Programação;
+- [Exercício de Programação](https://git.disroot.org/SI/semestre_3/src/branch/main/Programa%C3%A7%C3%A3o%20Orientada%20a%20Objeto/EP/Game_v2.java)
 
 ## Introdução á Estatística
 

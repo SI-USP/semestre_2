@@ -98,6 +98,26 @@ void merge(array A, int pivot, int size) {
     free(tmp);
 }
 
+/* Merge function using a watchdog to check for the limits of the array. One
+less comparison is made per loop and thus this is a faster version.
+
+void merge(array A, int pivot, int size) {
+    int i = 0, j = size - 1, k; array tmp = malloc(size * sizeof(int));
+
+    while (i < pivot) {
+        tmp[i] = A[i];
+        i++;
+    }
+    while (i < size) {
+        tmp[i] = A[j - (i - pivot)];
+        i++;
+    }
+    for (i = k = 0; k < size; k++)
+        A[k] = (tmp[i] <= tmp[j]) ? tmp[i++] : tmp[j--];
+    free(tmp);
+}
+*/
+
 void mergeSort(array A, int size) {
     int pivot;
 

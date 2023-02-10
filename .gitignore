@@ -1,0 +1,12 @@
+*
+!*/
+!.gitignore
+!.README.md
+!LICENSE
+!/Algoritmos*/*/*.c
+!/Cálculo*/Semana*/*.pdf
+!/Introdução*/Lista*/*.pdf
+!/Introdução*/EP*/*.pdf
+!/Matemática*/Lista*/*.pdf
+!/Matrizes*/Listas/*.pdf
+!/Matrizes*/Resumos/*.pdf
